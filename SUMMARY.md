@@ -6,7 +6,7 @@
 
 ## Javascript \| 자바스크립트 <a id="javascript"></a>
 
-* [Untitled](javascript/untitled.md)
+* [Window 와 BOM 객체](javascript/untitled.md)
 
 ## Typescript \| 타입스크립트 <a id="typescript"></a>
 
