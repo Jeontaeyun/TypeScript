@@ -18,7 +18,7 @@ description: >-
 
  보호 연산자는 리액트 프레임워크에서 조건부 렌더링을 할 때 사용하는 \(&&\)를 떠올리면 이해하기가 쉽습니다.
 
-```text
+```javascript
 const condition = false;
 const guardOperator = condition && (...);
 
@@ -26,7 +26,7 @@ console.log(guardOperator)
 // undefined
 ```
 
-```text
+```javascript
 const condition = true;
 const guardOperator = condition && (...);
 
@@ -40,7 +40,7 @@ console.log(guardOperator)
 
  기본값 연산자는 리액트 프레임워크에서 삼항 연산자를 대신해 기본값\(default\)을 정할 때 많이 사용됩니다.
 
-```text
+```javascript
 const condition = false; // null, undefined ...
 const defaultOperator = condition || deafult;
 
@@ -48,7 +48,7 @@ console.log(defaultOperator);
 // default
 ```
 
-```text
+```javascript
 const condition = "this is Default"; // true
 const defaultOperator = condition || deafult;
 
@@ -62,7 +62,7 @@ console.log(defaultOperator);
 
  해당 값이 true 인지 false인지를 체크하기 위해 느낌표 두개를 사용할 수 있습니다.
 
-```text
+```javascript
 const a = [];
 const b = NaN ;
 !!a    // true
@@ -73,7 +73,7 @@ const b = NaN ;
 
  함수 호출은 if/else 문법으로 함수를 조건부 호출하는 번거로움을 줄이기 위해서 고안된 방법이다. 
 
-```text
+```javascript
 // Before
 if(success) {
     pro.start();
