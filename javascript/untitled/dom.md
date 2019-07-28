@@ -121,7 +121,7 @@
   <thead>
     <tr>
       <th style="text-align:left">&#xC18D;&#xC131;</th>
-      <th style="text-align:left">&#xC124;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
@@ -230,7 +230,7 @@
   <thead>
     <tr>
       <th style="text-align:left">&#xC18D;&#xC131;</th>
-      <th style="text-align:left">&#xC124;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
     </tr>
   </thead>
   <tbody>
