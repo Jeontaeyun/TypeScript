@@ -12,6 +12,7 @@
   * [자바스크립트의 변수와 자료형](javascript/basic/undefined-1.md)
 * [자바스크립트의 객체](javascript/untitled/README.md)
   * [객체 \| Object](javascript/untitled/or-object.md)
+  * [객체의 얇은 복사와 깊은 복사](javascript/untitled/undefined-1.md)
   * [배열 \| Array](javascript/untitled/or-array.md)
   * [자주 사용하는 객체](javascript/untitled/undefined.md)
   * [Window 와 BOM 객체](javascript/untitled/window-bom.md)
