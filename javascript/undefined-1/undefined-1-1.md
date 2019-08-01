@@ -46,7 +46,7 @@ const arr2 = arr.map((item)=>{
 
 ### For-Each문
 
- forEach 구문은 배열을 반복하는 방법으로 다음과 같은 코드를 forEach를 이용해서 수정할 수 있다.
+ forEach 구문은 배열을 반복하는 방법으로 다음과 같은 코드를 forEach를 이용해서 수정할 수 있다. map과 다른 점은 map은 새로운 배열을 만들지만 for-each는 배열의 요소로 반복문을 구현하는 것 뿐이다. 
 
 \[Before\]
 
@@ -95,4 +95,12 @@ for (let i of testObject){
 ```
 
  단, for-of가 반복하는 컬렉션은 \[Symbol.iterator\]라는 속성이 있어야하는데 이런 컬렉션에는 Array, String, TypedArray, Map, Set, DOM, 생성기\(Generator\)등이 있습니다.
+
+ 또한, for-of 문법을 이용해서 값과 키 또는 인덱스를 모두 받고 오고 싶다면 다음과 같이 사용할 수 있습니다.
+
+```javascript
+for(const [idx, val] of Iterable.entries()){
+    console.log(idx, val);
+}
+```
 
