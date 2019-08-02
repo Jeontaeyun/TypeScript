@@ -80,6 +80,7 @@
   * [서버 센트 이벤트 SSE](node.js-or/or/html5.md)
 * [노드 CLI 프로그램](node.js-or/cli.md)
 * [노드 배포](node.js-or/undefined-6/README.md)
+  * [서비스 운영을 위한 자바스크립트 패키지](node.js-or/undefined-6/undefined.md)
   * [AWS를 통한 배포](node.js-or/undefined-6/aws.md)
   * [GCP를 통한 배포](node.js-or/undefined-6/gcp.md)
 * [노드 서버리스 개발](node.js-or/undefined-7.md)
