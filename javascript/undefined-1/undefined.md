@@ -63,3 +63,26 @@ switch(c){
 
  주의할 점은 case하나에 break를 지정해 조건문에서 탈출하도록 해주어야합니다. 그렇지 않으면 해당 조건 아래의 코드를 모두 동작시킵니다. 
 
+#### 폴스루 \| Fall-Through
+
+ case 절에서 break문을 사용해 switch 문을 벗어나는데 경우에 따라 break문을 생략할 수 있습니다. break문을 생략하면 다음 case절들이 break을 만날 때 까지 실행됩니다.
+
+ 위와 같은 상황을 떨어지다라는 의미의 fall through라고 부릅니다. 폴 스루는 보통 두가지 이유로 발생합니다.
+
+* 개발자가 같은 로직을 가지는 case 문을 사용하기 위해 fall-through를 발생시킵니다.
+* 개발자가 실수로 break문을 지정하지 않아 폴스루를 발생시킵니다. 
+
+{% hint style="info" %}
+앞으로 사용하게 될 TypeScript에서는 개발자의 Fall-Thorugh를 막아주는 컴파일 설정이 있습니다. tsconfig.json에서 다음과 같이 설정하면 됩니다.
+{% endhint %}
+
+```javascript
+{
+    "compilerOptions" : {
+        "noFallthroughCasesInSwitch" :true
+    }
+}
+```
+
+ 만약 tsc 명령어를 이용해 파일 단위로 컴파일할 때 폴스루를 방지하려면 --noFallthroughCasesInSwitch 옵션을 추가할 수 있습니다.
+

@@ -187,9 +187,9 @@ const value = false;               // Boolean 타입
 
 | 구분  | 설명  |
 | :--- | :--- |
-| 유니언\(Union\) | 2개 이상의 타입을 하나의 타입으로 정의한 타 |
+| 유니언\(Union\) | 2개 이상의 타입을 하나의 타입으로 정의한 타입  |
 | 인터섹션\(Intersection\) | 두 타입을 합쳐 하나로 만들 수 있는 타입 |
-| 특수 타입  | void, undefined, null 과 같은 타 |
+| 특수 타입  | void, undefined, null 과 같은 타입  |
 
 ### 변수의 타입 지정
 

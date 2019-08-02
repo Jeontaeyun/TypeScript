@@ -50,6 +50,8 @@ description: '타입스크립트는 마이크로 소프트에서 개발하고 �
         <ul>
           <li>Async/ Await | &#xBE44;&#xB3D9;&#xAE30;&#xD568;&#xC218;&#xB97C; &#xB3D9;&#xAE30;&#xD654;
             &#xD558;&#xB294; &#xBB38;&#xBC95;</li>
+          <li>&#xC9C0;&#xC218; &#xC5F0;&#xC0B0;&#xC790; [Exponentiation Operator] **
+            &#xC9C0;</li>
         </ul>
       </td>
     </tr>
