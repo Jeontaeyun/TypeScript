@@ -60,7 +60,11 @@
 
 * [노드 시작하기](node.js-or/undefined.md)
 * [노드 알아보기](node.js-or/undefined-2.md)
-* [노드 서버 만들기](node.js-or/undefined-1.md)
+* [노드 서버 만들기](node.js-or/node-server/README.md)
+  * [HTTP 통신](node.js-or/node-server/http.md)
+  * [Cookie와 Session](node.js-or/node-server/cookie-session/README.md)
+    * [Cookie](node.js-or/node-server/cookie-session/cookie.md)
+    * [Session](node.js-or/node-server/cookie-session/session.md)
 * [노드 패키지 매니저](node.js-or/undefined-3.md)
 * [노드 웹 서버 프레임워크](node.js-or/server-framework/README.md)
   * [Express](node.js-or/server-framework/express.md)
