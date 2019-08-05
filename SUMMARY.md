@@ -43,6 +43,7 @@
   * [린트 ESLint](javascript/undefined/eslint.md)
 * [자바스크립트 디자인패턴](javascript/undefined-3.md)
 * [그 외](javascript/etc/README.md)
+  * [이벤트 루프와 호출 스택](javascript/etc/eventloop-call-stack.md)
   * [Console 메소드 유용하게 사용하기](javascript/etc/console.md)
   * [Syntactic Sugar](javascript/etc/syntactic-sugar.md)
   * [쓰로틀링과 디바운싱](javascript/etc/undefined.md)
