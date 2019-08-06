@@ -52,6 +52,7 @@
   * [마이크로 서비스 아키텍쳐 MSA](javascript/etc/msa.md)
   * [학습법과 좋은 개발자가 되기위한 습관](javascript/etc/studying-habbit/README.md)
     * [신입개발자 면접 질문 리스트](javascript/etc/studying-habbit/interviewlist.md)
+    * [시니어 개발자란?](javascript/etc/studying-habbit/senior.md)
 
 ## Typescript \| 타입스크립트 <a id="typescript"></a>
 
