@@ -14,10 +14,10 @@ description: >-
 
 ### 개발자의 필요한 역량 7가지
 
-* 생산성 
-* 얼마나 안정적으로 일을 해내는가?
-* 팀워크
-* 제너럴, 도메인  지식을 많이 알고 있는가?
+* **생산성** 
+* **얼마나 안정적으로 일을 해내는가?**
+* **팀워크**
+* **제너럴, 도메인  지식을 많이 알고 있는가?**
 
 {% hint style="info" %}
 **도메인 지식 \| Domain Knowledge**
@@ -27,16 +27,14 @@ description: >-
  이 부분은 다양한 사람을 만나고, 다양한 경험을 하며, 다양한 책을 읽음으로써 해결할 수 있다. 개발자에게 프로그래밍적 지식과 컴퓨터 공학적 지식외에도 교양이 중요한 이유이다.
 {% endhint %}
 
-* 코드의 안정성
-* 코드가 깔끔한가?
+* **코드의 안정성**
+* **코드가 깔끔한가?**
   * 내 코드를 다른 사람이 봐도 쉽게 읽고 유지보수 할 수 있는가?
-* 시스템을 잘 디자인 하는가?
+* **시스템을 잘 디자인 하는가?**
 
   * 시스템 아키텍쳐를 효율적으로 설계하며\(불필요한 자원을 낭비하지 않고\) 안정성 있게 설계하는가?
 
-이에 대해 우아한 형제의 개발자 분들은 다음과 같이 설명한다. 
-
-위의 3개 상사들이 좋아할 항목이지만, 뒤의 4개 항목이 안받쳐주면 앞의 3개를 잘하기 어렵다.
+이에 대해 우아한 형제의 개발자 분들은 다음과 같이 설명한다. 위의 3개 상사들이 좋아할 항목이지만, 뒤의 4개 항목이 안받쳐주면 앞의 3개를 잘하기 어렵다.
 
 * 앞의 3개를 잘하면 입만 산 개발자가 된다. 즉, 코드는 잘 작성하지만 비즈니스 로직을 이해하지 못하고 다른 사람과 협업에 어려움이 생긴다.
 
@@ -55,22 +53,26 @@ description: >-
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Assistant</td>
+      <td style="text-align:left"><b>Assistant</b>
+      </td>
       <td style="text-align:left">&#xC774;&#xC81C; &#xB9C9; &#xB300;&#xD559;&#xC744; &#xC878;&#xC5C5;&#xD55C;
         &#xB808;&#xBCA8;</td>
     </tr>
     <tr>
-      <td style="text-align:left">Associate</td>
+      <td style="text-align:left"><b>Associate</b>
+      </td>
       <td style="text-align:left">&#xC77C;&#xC744; &#xC8FC;&#xBA74; &#xADF8; &#xC77C;&#xC744; &#xC798; &#xD574;&#xC8FC;&#xB294;
         &#xC0AC;&#xB78C;</td>
     </tr>
     <tr>
-      <td style="text-align:left">Mid Level</td>
+      <td style="text-align:left"><b>Mid Level</b>
+      </td>
       <td style="text-align:left">&#xC774;&#xB9AC;&#xC744; &#xCC3E;&#xC544;&#xC11C; &#xADF8;&#xAC83;&#xC744;
         &#xD574;&#xACB0;&#xD558;&#xB294; &#xC0AC;&#xB78C;</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC2DC;&#xB2C8;&#xC5B4;</td>
+      <td style="text-align:left"><b>&#xC2DC;&#xB2C8;&#xC5B4;</b>
+      </td>
       <td style="text-align:left">
         <p>&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xACE0; &#xC774;&#xB97C; &#xBD84;&#xBC30;&#xD574;&#xC11C;
           &#xC131;&#xACFC;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xB0B4;&#xB294; &#xC0AC;&#xB78C;</p>
@@ -81,7 +83,8 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xB9AC;&#xB4DC; &#xAC1C;&#xBC1C;&#xC790;</td>
+      <td style="text-align:left"><b>&#xB9AC;&#xB4DC; &#xAC1C;&#xBC1C;&#xC790;</b>
+      </td>
       <td style="text-align:left">
         <p>&#xD55C;&#xBC88;&#xB3C4; &#xC548;&#xD574;&#xBCF8; &#xC77C;&#xC744; &#xC918;&#xB3C4;
           &#xACAC;&#xC801;&#xC744; &#xB0B4;&#xACE0; &#xC774;&#xB97C; &#xD574;&#xACB0;&#xD560;
@@ -95,7 +98,8 @@ description: >-
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xAD6C;&#xB8E8; | CTO</td>
+      <td style="text-align:left"><b>&#xAD6C;&#xB8E8; | CTO</b>
+      </td>
       <td style="text-align:left">&#xBCF8;&#xC778;&#xC774; &#xD558;&#xC9C0; &#xC54A;&#xB294; &#xC77C;&#xC5D0;
         &#xB300;&#xD574;&#xC11C;&#xB3C4; &#xCC45;&#xC784;&#xC744; &#xC9C0;&#xB294;
         &#xC0AC;&#xB78C;. &#xACB0;&#xAD6D; &#xCD5C;&#xACE0; &#xAE30;&#xC220; &#xCC45;&#xC784;&#xC790;&#xAC00;
