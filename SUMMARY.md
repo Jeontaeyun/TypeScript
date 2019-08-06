@@ -26,7 +26,7 @@
     * [자바스크립트의 상속](javascript/function/undefined-1/undefined-1.md)
     * [자바스크립트 Class\(ES+\)](javascript/function/undefined-1/class-es+.md)
     * [객체지향 프로그래밍의 다형성](javascript/function/undefined-1/undefined.md)
-  * [실행 컨텍스트](javascript/function/undefined.md)
+  * [실행 컨텍스트 \| The Execution Context](javascript/function/undefined.md)
   * [클로저와 호이스팅](javascript/function/undefined-2/README.md)
     * [순수 함수 \| 함수형 프로그래밍](javascript/function/undefined-2/functional.md)
   * [함수의 범위 \| Scope](javascript/function/scope.md)
@@ -49,6 +49,8 @@
   * [Console 메소드 유용하게 사용하기](javascript/etc/console.md)
   * [Syntactic Sugar](javascript/etc/syntactic-sugar.md)
   * [쓰로틀링과 디바운싱](javascript/etc/undefined.md)
+  * [학습법과 좋은 개발자가 되기위한 습관](javascript/etc/studyinh-habbit/README.md)
+    * [신입개발자 면접 질문 리스트](javascript/etc/studyinh-habbit/interviewlist.md)
 
 ## Typescript \| 타입스크립트 <a id="typescript"></a>
 
