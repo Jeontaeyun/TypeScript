@@ -49,8 +49,8 @@
   * [Console 메소드 유용하게 사용하기](javascript/etc/console.md)
   * [Syntactic Sugar](javascript/etc/syntactic-sugar.md)
   * [쓰로틀링과 디바운싱](javascript/etc/undefined.md)
-  * [학습법과 좋은 개발자가 되기위한 습관](javascript/etc/studyinh-habbit/README.md)
-    * [신입개발자 면접 질문 리스트](javascript/etc/studyinh-habbit/interviewlist.md)
+  * [학습법과 좋은 개발자가 되기위한 습관](javascript/etc/studying-habbit/README.md)
+    * [신입개발자 면접 질문 리스트](javascript/etc/studying-habbit/interviewlist.md)
 
 ## Typescript \| 타입스크립트 <a id="typescript"></a>
 
