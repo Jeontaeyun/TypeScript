@@ -12,5 +12,15 @@
 
  HTTP는 Request\(요청\)과 Response\(응답\)으로 이루어진 통신 프로토콜이다. 
 
+{% hint style="info" %}
+\*\*\*\*[**HTTP와 HTTPs**](https://ko.wikipedia.org/wiki/HTTPS)\*\*\*\*
+
+https로 접속하기 위해서는 별도의 도메인과 인증서 발급이 필요합니다. HTTP 프로토콜에 보안을 강화하기 위해 인증과 암호화를 추가한 프로토콜이다.
+
+HyperText Protocol over Secure Socket Layer의 약자로 HTTPS는 소켓 통신에서 일반 텍스트를 사용하는 대신에, SSL이나 TLS프로콜을을 통해 세션 데이터를 암호화한다. 따라서 데이터의 적절한 보호를 보장한다. 
+
+HTTPS의 기본 TCP/IP포트는 443이다. 
+{% endhint %}
+
 
 

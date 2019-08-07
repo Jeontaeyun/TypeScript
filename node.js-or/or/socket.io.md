@@ -67,4 +67,7 @@ socket.on('news', function (data) {
 | :--- | :--- |
 | socket.emit\('이벤트', data\) | 데이터를 전송하는 측에서 이벤트를 발생시키고 전송한다. |
 | socket.on\('이벤트이름', function\(data\){...}\) | 데이터를 수신하는 측에서 이벤트 리스너를 등록합니다.  |
+| socket.id | 소켓 고유의 아이디를 호출하는 방법 |
+| socket.request | HTTP 요청 객체에 접근하는 방법  |
+| socket.request.res | HTTP 응답 객체에 접근하는 방법  |
 
