@@ -88,6 +88,7 @@
   * [CORS \| Cross Origin Resource Sharing](node.js-or/api/cors-or-cross-origin-resource-sharing.md)
   * [JWT 토큰](node.js-or/api/jwt.md)
   * [API 서버?](node.js-or/api/api.md)
+  * [REST API 문서화](node.js-or/api/rest-api.md)
 * [노드 웹 소켓 \| 실시간 데이터 교환](node.js-or/or/README.md)
   * [ws 모듈 \| 웹 소켓 모듈](node.js-or/or/ws-or.md)
   * [Socket.io 모듈](node.js-or/or/socket.io.md)
