@@ -4,7 +4,7 @@ description: 해당 페이지는 언어별 목적과 장단점에 대한 전체�
 
 # 프로그래밍 언어
 
-## 프로그래밍 언
+## 프로그래밍 언어 
 
 ### 프로그래밍 언어별 목적
 
@@ -172,7 +172,7 @@ description: 해당 페이지는 언어별 목적과 장단점에 대한 전체�
         <p>03. V8&#xC758; &#xD655;&#xC7A5;&#xC131; ( V8&#xAC00; C++&#xC73C;&#xB85C;
           &#xAC1C;&#xBC1C;&#xD558;&#xC5EC; C++&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC;
           &#xAE30;&#xB2A5;&#xD655;&#xC7A5; &#xAC00;&#xB2A5;)</p>
-        <p>04. JSON &#xC9C0;</p>
+        <p>04. JSON &#xC9C0;&#xC6D0;</p>
       </td>
     </tr>
     <tr>
@@ -186,7 +186,7 @@ description: 해당 페이지는 언어별 목적과 장단점에 대한 전체�
         <p>02. &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC73C;&#xB85C;&#xBD80;&#xD130;
           &#xAC80;&#xC0AC;&#xB97C; &#xBC1B;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;
           &#xC624;&#xB958;&#xC758; &#xC704;&#xD5D8;&#xC774; &#xB192;&#xB2E4;.(&#xD0C0;&#xC785;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;
-          &#xD544;)</p>
+          &#xD544;&#xC694;)</p>
         <p>03. &#xBA40;&#xD2F0; &#xCF54;&#xC5B4; &#xBA38;&#xC2E0;&#xC5D0;&#xC11C;
           CPU &#xC0AC;&#xC6A9;&#xC774; &#xCD5C;&#xC801;&#xD654; &#xB420; &#xC218;
           &#xC5C6;&#xB2E4;</p>
