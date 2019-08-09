@@ -27,3 +27,31 @@
 | typeof |  |
 | delete obj.key | 객체 내의 속성을 지울 수 있습니다. 성공하면 true 실패하면 false를 반환합니다. |
 
+### 동적 속성 생성 \(ES+\)
+
+ ES2015+부터는 속성의 이름에 변수의 값이 사용될 때 자체적으로 계산해주는 동적 속성 생성이 가능해졌습니다. 
+
+```javascript
+const value = 1;
+const object = {
+    ['hi_'+value] : "hi"
+}
+
+// object = {
+    hi_1 : "hi"
+}
+```
+
+ ES2015 이전에는 속성의 이름에 변수를 넣으면 자동으로 계산을 하지 못해서 다음과 같이 사용해야 했습니다.
+
+```javascript
+var value = 1;
+var object = {
+
+}
+object['hi_'+value] = "hi"
+// object = {
+    hi_1 : "hi"
+}
+```
+

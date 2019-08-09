@@ -77,6 +77,14 @@ const jindoDog = new JindoDog('jindo','stark','jeon');
   </thead>
   <tbody>
     <tr>
+      <td style="text-align:left">constructor</td>
+      <td style="text-align:left">&#xAC1D;&#xCCB4;&#xAC00; &#xC0DD;&#xC131;&#xB418;&#xC5C8;&#xC744; &#xB54C;
+        &#xD558;&#xB294; &#xD589;&#xB3D9;. new &#xD0A4;&#xC6CC;&#xB4DC;&#xB85C;
+        &#xAC1D;&#xCCB4;&#xB97C; &#xD638;&#xCD9C;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xB294;
+        &#xC778;&#xC790;&#xB4E4;&#xC744; &#xCC98;&#xB9AC;&#xD558;&#xB294; &#xBD80;&#xBD84;&#xC744;
+        &#xAE30;&#xC220;&#xD55C;&#xB2E4;.</td>
+    </tr>
+    <tr>
       <td style="text-align:left">super</td>
       <td style="text-align:left">&#xBD80;&#xBAA8; &#xAC1D;&#xCCB4;&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xB294;
         &#xBC29;&#xBC95;</td>

@@ -85,6 +85,35 @@ const arrowFunction = () => {
 };
 ```
 
+### 매개변수 Default  및 rest \(ES+\)
+
+#### 매개변수 Default
+
+ ES2015+ 부터 매개변수에 초기값을 지정해주는 것이 가능해졌습니다.  다음과 같이 함수를 선언할 때 매개변수에 값을 대입해주면 기본값\(Default\)로 지정됩니다.
+
+```javascript
+function helloStark(x = 'hi' ,y = 'hello', z= 'stark' ){
+    return console.log(x, y, z);
+}
+helloStark();
+// 'hi hello stark'
+```
+
+#### 매개변수 rest
+
+ ES2015+에서는 몇 개의 매개변수를 넣을 지 모를 때를 대비해 rest기능을 추가하였습니다. 다음과 같이 쓸 수 있습니다.
+
+```javascript
+const restPara = (x, y, ...rest){
+    console.log(rest.length);        
+    // rest = [3,4,5]
+};
+restPara(1,2,3,4,5);
+// 3
+```
+
+단, 주의할 점은 rest를 생성할 때는 함수 매개변수의 가장 마지막 부분에 추가해야합니다.
+
 ### 그 외 
 
  자바스크립트에서 사용하는 함수의 개념에는 몇 가지 특징이 있다. 
