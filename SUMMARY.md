@@ -53,6 +53,8 @@
   * [쓰로틀링과 디바운싱](javascript/etc/undefined.md)
   * [마이크로 서비스 아키텍쳐 MSA](javascript/etc/msa.md)
   * [학습법과 좋은 개발자가 되기위한 습관](javascript/etc/studying-habbit/README.md)
+    * [프로그래밍 언어](javascript/etc/studying-habbit/programming-language.md)
+    * [트러블 슈팅](javascript/etc/studying-habbit/trouble-shooting.md)
     * [훌륭한 자바스크립트 개발자가 되기 위한 방법](javascript/etc/studying-habbit/undefined.md)
     * [신입개발자 면접 질문 리스트](javascript/etc/studying-habbit/interviewlist.md)
     * [시니어 개발자란?](javascript/etc/studying-habbit/senior.md)
