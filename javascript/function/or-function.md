@@ -83,7 +83,7 @@ add(argument_01, argument_02, ...);
 
 ### 화살표 함수 \| Arrow Function\(ES+\)
 
- 화살표 함수는 ES2015부터 도입한 개념으로 구문이 짧고 자기 자신의 **this, arguments, super 또는 new.target등을 바인딩 하지 않습니다**.
+ 화살표 함수는 ES2015부터 도입한 개념으로 구문이 짧고 자기 자신의 **this, arguments, super 또는 new.target등을 바인딩 하지 않습니다**. _즉, this를 호출하면 window 대신 상위 함수의 this를 가져 옵니다._ 
 
  화살표 함수는 항상 익명으로 이 함수 표현은 메소드 함수가 아닌 곳에 가장 적합합니다. 따라서 생성자로 사용할 수 없습니다. 
 
@@ -92,6 +92,14 @@ const arrowFunction = () => {
         ...
 };
 ```
+
+{% hint style="info" %}
+**자바스크립트 DOM 객체 이벤트 리스너**
+
+자바스크립트와 제이쿼리에서 DOM 객체의 이벤트 리스너는 자동으로 this를 DOM 객체로 바꿉니다. 내부에서 자동으로 일어나는 작동이기에 어쩔 수 없이 암기해야 합니다. 
+
+하지만, 이벤트 리스너 내부에서 만든 함수의 this는 window를 가리킵니다. 
+{% endhint %}
 
 ### 매개변수 Default  및 rest \(ES+\)
 

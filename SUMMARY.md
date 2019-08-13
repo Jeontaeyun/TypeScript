@@ -7,6 +7,7 @@
 
 ## Javascript \| 자바스크립트 <a id="javascript"></a>
 
+* [자바스크립트의 컨셉](javascript/concept.md)
 * [자바스크립트의 기본과 자료형](javascript/basic/README.md)
   * [자바스크립트의 역사](javascript/basic/javascript.md)
   * [자바스크립트의 변수와 자료형](javascript/basic/value.md)

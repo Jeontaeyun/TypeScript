@@ -10,11 +10,24 @@ const stark = {
     age: 25,
     major: "electronic engineering",
     lived : "melbourn",
-    hobby : ["programming","drawing","writing"]
+    hobby : ["programming","drawing","writing"],    // Tralling commas in Function 
 }
 ```
 
  나라는 사람을 객체로 만들어 이름, 나이, 전공, 거주지, 취미로 만들면 위와 같은 객체가 됩니다.
+
+{% hint style="info" %}
+**Tralling commas in Function** 
+
+최신 자바스크립트에서는 위와 같이 함수의 인자나 매개변수, 객체의 마지막에 콤마를 붙여도 되게 되었습니다. 기능상의 장점은 없으나 Git을 이용한 버전 관리 도구에서 이를 하지 않을 시 비효율적으로 동작합니다. 
+{% endhint %}
+
+{% hint style="info" %}
+**좋은 버전 관리용 습관**
+
+* Tralling commas in Function을 이용하는 습관 
+* 코드 마지막 줄을 빈칸으로 남겨두는 습관
+{% endhint %}
 
 ### 객체의 속성 \| Property
 

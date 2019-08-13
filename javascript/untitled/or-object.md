@@ -14,22 +14,22 @@
 | Object.setPrototypeOf\(객체, prototype\); | 객체의 prototype을 설정합니다. |
 | instanceof | 객체가 특정 생성자의 자식인지 조회할 수 있습니다.  |
 | 객체.propertyIsEnumerable\(속성\); | 해당 속성이 열거 가능한 속성인지 알려줍니다. 열거 가능이란 for-in과 같은  반복문 안에서 쓸 수 있는지를 말합니다. |
-| 객체.toString\(\); |  |
-| 객체.valueOf\(\); |  |
+| 객체.toString\(\); | 기본적으로 \[object Object\]와 같이 객체의 종류를 알려주고 사용자가 임의로 수정할 수 있습니다.  |
+| 객체.valueOf\(\); | 객체의 기본 값을 의미합니다.  |
 | Object.create\(prototype, 속성들\); | 객체를 생성하는 방법 중 하나입니다. |
 | Object.defineProperties\(객체, 속성들\); |  |
 | Object.defineProperty\(객체, 속성, 설명\); |  |
-| Object.getOwnPropertyDescriptor\(객체, 속성\); |  |
+| Object.getOwnPropertyDescriptor\(객체, 속성\); | 속성의 설명 값을 불러옵니다.  |
 | Object.freeze |  |
 | Object.seal |  |
 | Object.preventExtensions |  |
-| Object.keys\(\); |  |
-| typeof |  |
+| Object.keys\(\); | 객체의 속성명을 모두 가져와 배열로 만듭니다. enumerable이 false인 것은 제외합니다.  |
+| typeof | 변수의 타입을 알려줍니다. null과 array는 object로 처리되니 이 부분을 주의해야 합니다. |
 | delete obj.key | 객체 내의 속성을 지울 수 있습니다. 성공하면 true 실패하면 false를 반환합니다. |
 
 ### 동적 속성 생성 \(ES+\)
 
- ES2015+부터는 속성의 이름에 변수의 값이 사용될 때 자체적으로 계산해주는 동적 속성 생성이 가능해졌습니다. 
+ ES2015+부터는 속성의 이름에 변수의 값이 사용될 때 자체적으로 계산해주는 동적 속성 생성이 가능하게 되었습니다. 
 
 ```javascript
 const value = 1;
