@@ -23,7 +23,7 @@
       </td>
       <td style="text-align:left">&#xB9C8;&#xC6B0;&#xC2A4;&#xAC00; &#xC9C0;&#xC815;&#xD55C; &#xC694;&#xC18C;&#xC5D0;
         &#xC62C;&#xB77C;&#xAC14;&#xC744; &#xB54C; &#xBC1C;&#xC0DD;&#xD558;&#xB294;
-        &#xC774;&#xBCA4;</td>
+        &#xC774;&#xBCA4;&#xD2B8;</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>mouseout</b>
