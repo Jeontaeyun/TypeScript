@@ -63,7 +63,7 @@
 
 8. arguments 객체 생성
 
-   * arguments 객체가 생서어되고 활성 객체 안에 arguments 속성은 arguments 객체를 참조한다. 전역 객체에서는 생성되지 않는다.
+   * arguments 객체가 생되고 활성 객체 안에 arguments 속성은 arguments 객체를 참조한다. 전역 객체에서는 생성되지 않는다.
 
 9. 새로운 실행 컨텍스트의 \[\[scope\]\]는 해당 함수 객체의 \[\[scope\]\]를 복사한다.
 
