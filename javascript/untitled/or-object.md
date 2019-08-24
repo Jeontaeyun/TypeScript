@@ -16,7 +16,7 @@
 | 객체.propertyIsEnumerable\(속성\); | 해당 속성이 열거 가능한 속성인지 알려줍니다. 열거 가능이란 for-in과 같은  반복문 안에서 쓸 수 있는지를 말합니다. |
 | 객체.toString\(\); | 기본적으로 \[object Object\]와 같이 객체의 종류를 알려주고 사용자가 임의로 수정할 수 있습니다.  |
 | 객체.valueOf\(\); | 객체의 기본 값을 의미합니다.  |
-| Object.create\(prototype, 속성들\); | 객체를 생성하는 방법 중 하나입니다. |
+| Object.create\(prototype, 속성들\); | 객체를 생성하는 방법 중 하나 입니다. |
 | Object.defineProperties\(객체, 속성들\); |  |
 | Object.defineProperty\(객체, 속성, 설명\); |  |
 | Object.getOwnPropertyDescriptor\(객체, 속성\); | 속성의 설명 값을 불러옵니다.  |
@@ -37,6 +37,12 @@
 네이티브 자바스크립트로 깊은 복사를 하는 방법은 아직 제공되지 않는다. 따라서 cutom method를 만들거나, JQuery나 Lodash와 같은 서드 파티 라이브러리를 사용해야 한다.
 
 Lodash와 Underscore, JQuery등은 자바스크립트를 다룰 때 발생하는 어려움을 도와주는 라이브러리이다. C++의 STL과 비슷하다. 
+{% endhint %}
+
+{% hint style="info" %}
+**Enumerable \| 열거할 수 있는, 셀 수 있는** 
+
+JS 객체 속성은 Enumerable\(열거자\) 또는 Nonenumerable\(비열거자\)로 정의할 수 있으며, 이들을 탐색, 검색, 반복할 수 있는 build-in 메소드를 제공하고 있습니다.
 {% endhint %}
 
 ### 동적 속성 생성 \(ES+\)
