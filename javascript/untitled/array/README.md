@@ -158,5 +158,64 @@
         &#xC544;&#xB2CC;&#xC9C0; &#xD655;&#xC778;&#xD574;&#xC8FC;&#xB294; &#xC5ED;&#xD560;&#xC744;
         &#xD558;&#xBA70; true&#xC640; false&#xB85C; &#xAC12;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
+    <tr>
+      <td style="text-align:left"><b>Array.from(&#xC720;&#xC0AC;&#xBC30;&#xC5F4;)</b>
+      </td>
+      <td style="text-align:left">
+        <p>&#xBC30;&#xC5F4;&#xC774; &#xC544;&#xB2CC; &#xAC83;(&#xBB38;&#xC790;&#xC5F4;,
+          &#xC720;&#xC0AC;&#xBC30;&#xC5F4;, &#xBC18;&#xBCF5; &#xAC00;&#xB2A5; &#xAC1D;&#xCCB4;)&#xC744;
+          &#xBC30;&#xC5F4;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC8FC;&#xB294; &#xBA54;&#xC18C;&#xB4DC;</p>
+        <p>document.querySelectorAll()&#xAC19;&#xC740; &#xAC12;&#xC5D0;&#xB3C4; &#xC27D;&#xAC8C;
+          &#xBC30;&#xC5F4; &#xBA54;&#xC18C;&#xB4DC; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Array.of(arg_1, arg_2, ...)</b>
+      </td>
+      <td style="text-align:left">&#xC778;&#xC790;&#xB97C; &#xC694;&#xC18C;&#xB85C; &#xAC16;&#xB294; &#xBC30;&#xC5F4;&#xC744;
+        &#xB9CC;&#xB4ED;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.fill(&#xAC12;, &#xC2DC;&#xC791;&#xC704;&#xCE58;, &#xB05D;&#xC704;&#xCE58;)</b>
+      </td>
+      <td style="text-align:left">&#xBC30;&#xC5F4;&#xC744; &#xC694;&#xC18C;&#xB97C; &#xC778;&#xC790;&#xB85C;
+        &#xC81C;&#xACF5;&#xD55C; &#xAC12;&#xC73C;&#xB85C; &#xB300;&#xCCB4;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xC2DC;&#xC791; &#xAC12;&#xACFC; &#xB05D; &#xAC12;&#xC740; &#xC704;&#xCE58;&#xB97C;
+        &#xD2B9;&#xC815;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.find((item)=&gt;{&#xC870;&#xAC74;})</b>
+      </td>
+      <td style="text-align:left">&#xBC30;&#xC5F4; &#xC548;&#xC758; &#xC694;&#xC18C;&#xB97C; &#xCC3E;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xC870;&#xAC74;&#xC744; &#xB9CC;&#xC871;&#xD558;&#xB294; &#xCCAB; &#xBC88;&#xC9F8;
+        &#xC694;&#xC18C;&#xB9CC; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.findIndex((item)=&gt;{&#xC870;&#xAC74;})</b>
+      </td>
+      <td style="text-align:left">find &#xBA54;&#xC18C;&#xB4DC;&#xC640; &#xBE44;&#xC2B7;&#xD55C; &#xAE30;&#xB2A5;&#xC744;
+        &#xD558;&#xC9C0;&#xB9CC; &#xD574;&#xB2F9; &#xC694;&#xC18C; &#xB300;&#xC2E0;&#xC5D0;
+        &#xADF8; &#xC694;&#xC18C;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.inclueds(&#xCC3E;&#xC744; &#xC694;&#xC18C;, &#xC2DC;&#xC791;&#xC21C;&#xC11C;)</b>
+      </td>
+      <td style="text-align:left">&#xBC30;&#xC5F4;&#xC5D0; &#xD574;&#xB2F9; &#xC694;&#xC18C;&#xAC00; &#xC788;&#xB294;&#xC9C0;
+        &#xD655;&#xC778;&#xD558;&#xC5EC; Boolean&#xAC12;&#xC73C;&#xB85C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Array.prototype.flat()</b>
+      </td>
+      <td style="text-align:left">&#xB2E4;&#xC911; &#xBC30;&#xC5F4;&#xC744; &#xD3BC;&#xCE58;&#xB294; &#xAE30;&#xB2A5;&#xC73C;&#xB85C;
+        &#xAE30;&#xBCF8;&#xC740; 1&#xB2E8;&#xACC4; &#xD3BC;&#xCE68;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC778;&#xC218;&#xB85C; &#xBA87; &#xBC88; &#xC5F0;&#xB2EC;&#xC544; &#xD3BC;&#xCE60;&#xC9C0;&#xB97C;
+        &#xC815;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>Array.prototype.flatMap()</b>
+      </td>
+      <td style="text-align:left">&#xBC30;&#xC5F4;&#xC758; map &#xBA54;&#xC18C;&#xB4DC;&#xC640; flat &#xBA54;&#xC18C;&#xB4DC;&#xB97C;
+        &#xACB0;&#xD569;&#xD55C; &#xAE30;&#xB2A5;&#xC785;&#xB2C8;&#xB2E4;.</td>
+    </tr>
   </tbody>
 </table>

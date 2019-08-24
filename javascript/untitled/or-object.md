@@ -26,6 +26,18 @@
 | Object.keys\(\); | 객체의 속성명을 모두 가져와 배열로 만듭니다. enumerable이 false인 것은 제외합니다.  |
 | typeof | 변수의 타입을 알려줍니다. null과 array는 object로 처리되니 이 부분을 주의해야 합니다. |
 | delete obj.key | 객체 내의 속성을 지울 수 있습니다. 성공하면 true 실패하면 false를 반환합니다. |
+| **Object.assign\(목표, 소스1, 소스2, ...\)** | 객체를 얕은 복사하는 메소드입니다. 깊은 복사는 할 수 없습니다. 소스들을 목표에 모두 복사해서 합칩니다. 중복된 값은 덮어 씌웁니다. |
+| **Object.is\(값1, 값2\)** | 두 값이 같은 지 비교합니다.  |
+| **Object.values\(객체\)** | Object.keys\(\)에 대응하는 메소드로 객체의 enumerable한 속성값들만 배열로 만들어 줍니다. 함수형 프로그래밍에 도움됩니다. |
+| **Object.entries\(객체**\) | Object.keys와 Object.values를 함쳐놓은 메소드로 함수형 프록래밍에 도움이 됩니다.  |
+
+{% hint style="info" %}
+**네이티브 자바스크립트로 깊은 복사를 하는 방법**
+
+네이티브 자바스크립트로 깊은 복사를 하는 방법은 아직 제공되지 않는다. 따라서 cutom method를 만들거나, JQuery나 Lodash와 같은 서드 파티 라이브러리를 사용해야 한다.
+
+Lodash와 Underscore, JQuery등은 자바스크립트를 다룰 때 발생하는 어려움을 도와주는 라이브러리이다. C++의 STL과 비슷하다. 
+{% endhint %}
 
 ### 동적 속성 생성 \(ES+\)
 
