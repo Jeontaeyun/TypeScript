@@ -17,12 +17,12 @@
 | 객체.toString\(\); | 기본적으로 \[object Object\]와 같이 객체의 종류를 알려주고 사용자가 임의로 수정할 수 있습니다.  |
 | 객체.valueOf\(\); | 객체의 기본 값을 의미합니다.  |
 | Object.create\(prototype, 속성들\); | 객체를 생성하는 방법 중 하나 입니다. |
-| Object.defineProperties\(객체, 속성들\); |  |
-| Object.defineProperty\(객체, 속성, 설명\); |  |
+| Object.defineProperties\(객체, 속성들\); | 객체의 속성을 자세하게 정의하는 메소드입니다. |
+| Object.defineProperty\(객체, 속성, 설명\); | 객체의 속성 중 configurable이 true인 데이터의 설명을 다시 정의합니다. |
 | Object.getOwnPropertyDescriptor\(객체, 속성\); | 속성의 설명 값을 불러옵니다.  |
-| Object.freeze |  |
-| Object.seal |  |
-| Object.preventExtensions |  |
+| Object.freeze\(객체\) | writable을 false로 해도, value가 객체인 경우에는 객체의 속성을 바꾸는 것을 막지 못하는데 이 때 freeze를 사용해 객체 전체를 바꾸지 못하게 고정할 수 있습니다. |
+| Object.seal\(객체\) | 속성의 추가, 제거를 막고 configurable을 false로 바꿉니다. 속성 값은 writable이 true일 때 바꿀 수 있습니다. |
+| Object.preventExtensions\(객체\) | 속성의 추가만 막고 속성 제거, 값 변경, 설정 변경은 가능합니다.  |
 | Object.keys\(\); | 객체의 속성명을 모두 가져와 배열로 만듭니다. enumerable이 false인 것은 제외합니다.  |
 | typeof | 변수의 타입을 알려줍니다. null과 array는 object로 처리되니 이 부분을 주의해야 합니다. |
 | delete obj.key | 객체 내의 속성을 지울 수 있습니다. 성공하면 true 실패하면 false를 반환합니다. |
@@ -44,6 +44,19 @@ Lodash와 Underscore, JQuery등은 자바스크립트를 다룰 때 발생하는
 
 JS 객체 속성은 Enumerable\(열거자\) 또는 Nonenumerable\(비열거자\)로 정의할 수 있으며, 이들을 탐색, 검색, 반복할 수 있는 build-in 메소드를 제공하고 있습니다.
 {% endhint %}
+
+#### 객체 속성 
+
+| 구분  | 설명 |
+| :--- | :--- |
+| writable | 속성값을 변경할 수 있는지에 대한 여부를 나타냅니다 |
+| enumerable | for...in 반복 문등 객체를 이용한 반복문 안에서 사용 가능한지를 나타냅니다 |
+| configurable | 속성의 설명을 바꿀 수 있는지 나타냅니다 |
+| value | value는 속성의 값을 나타냅니다 |
+| get | get은 속성의 값을 가져올 때 사용합니다 |
+| set | set은 속성의 값을 설정할 때 사용합니 |
+
+기본적으로 객체 속성 writable, enumerable, configurable은 false입니다.
 
 ### 동적 속성 생성 \(ES+\)
 
