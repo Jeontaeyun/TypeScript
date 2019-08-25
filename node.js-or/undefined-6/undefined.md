@@ -64,7 +64,7 @@ $npm i winston@next
 $npm i connect-redis 
 ```
 
- 익스프레스에서는 connect-redis 라는 패키지를 통해서 레디스와 익스프레스를 연결할 수 있습니다. 다만 ,Redis를 사용하기 위해서는 별도의 레디스 데이터베이스를 설치해야합니다.
+ 익스프레스에서는 connect-redis 라는 패키지를 통해서 레디스와 익스프레스를 연결할 수 있습니다. 다만, Redis를 사용하기 위해서는 별도의 레디스 데이터베이스를 설치해야합니다.
 
 ### helmet, hpp
 

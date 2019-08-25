@@ -2,7 +2,7 @@
 
 ## 쿠키란?
 
-### 쿠키의 설명 및 특
+### 쿠키의 설명 및 특징 
 
  쿠키는 웹 서버의 정보를 웹 브라우저에 저장해서 **개인화**, **인증**, **사용자 추적**등이 가능 하도록 도와주는 HTTP의 개념입니다.
 
@@ -33,7 +33,7 @@
       </td>
       <td style="text-align:left">&#xC11C;&#xBC84;&#xC5D0; &#xC800;&#xC7A5;&#xD574;&#xC57C; &#xD560; &#xB85C;&#xADF8;&#xC778;,
         &#xC7A5;&#xBC14;&#xAD6C;&#xB2C8;, &#xAC8C;&#xC784; &#xC2A4;&#xCF54;&#xC5B4;
-        &#xB4F1;&#xC758; &#xBCF4; &#xAD00;&#xB9AC;</td>
+        &#xB4F1;&#xC758; &#xB370;&#xC774;&#xD130; &#xAD00;&#xB9AC;</td>
     </tr>
     <tr>
       <td style="text-align:left">
