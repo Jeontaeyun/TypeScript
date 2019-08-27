@@ -96,8 +96,36 @@ HTTPS의 기본 TCP/IP포트는 443이다.
   </tbody>
 </table>#### 5xx \| 서버 응답 에
 
-| 구분  | 설명  |
-| :--- | :--- |
-| 500 | 내부 서버 오류. 서버에 오류가 발생하여 요청을 수행할 수 없을 때 응답 코드 |
-| 501 | 구현되지 않음. 서버에 요청을 수행할 수 있는 기능이 없을 때 응답 코드  |
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xAD6C;&#xBD84;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">500</td>
+      <td style="text-align:left">&#xB0B4;&#xBD80; &#xC11C;&#xBC84; &#xC624;&#xB958;. &#xC11C;&#xBC84;&#xC5D0;
+        &#xC624;&#xB958;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xC5EC; &#xC694;&#xCCAD;&#xC744;
+        &#xC218;&#xD589;&#xD560; &#xC218; &#xC5C6;&#xC744; &#xB54C; &#xC751;&#xB2F5;
+        &#xCF54;&#xB4DC;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">501</td>
+      <td style="text-align:left">&#xAD6C;&#xD604;&#xB418;&#xC9C0; &#xC54A;&#xC74C;. &#xC11C;&#xBC84;&#xC5D0;
+        &#xC694;&#xCCAD;&#xC744; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB294;
+        &#xAE30;&#xB2A5;&#xC774; &#xC5C6;&#xC744; &#xB54C; &#xC751;&#xB2F5; &#xCF54;&#xB4DC;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">503</td>
+      <td style="text-align:left">
+        <p>Service Unavailable. &#xC11C;&#xBC84;&#xAC00; &#xB2E4;&#xC6B4;&#xB418;&#xAC70;&#xB098;
+          REQUEST&#xB97C; &#xCC98;&#xB9AC;&#xD560; &#xC218; &#xC5C6;&#xC74C;&#xC744;
+          &#xC758;&#xBBF8;&#xD558;&#xB294; &#xC751;&#xB2F5; &#xCF54;&#xB4DC;</p>
+        <p>&#xB300;&#xBD80;&#xBD84; &#xC11C;&#xBC84; &#xC810;&#xAC80;&#xC2DC;&#xC5D0;
+          &#xBC1C;</p>
+      </td>
+    </tr>
+  </tbody>
+</table>

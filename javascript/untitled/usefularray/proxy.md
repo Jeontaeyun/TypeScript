@@ -33,17 +33,8 @@ target.zero; // undefined
 | :--- | :--- |
 | get\(target, proxyKey\) | 속성 값을 호출할 때 어떤 행동을 하는지 정의하는 옵션  |
 | set\(target, porxyKey, proxyValue\)  | 속성 값을 설정할 때 어떤 행동을 하는지 정의하는 옵션 |
-| has |  |
-| deleteProperty |  |
 | apply | 함수를 호출할 때 그 행동을 가로채 프록시 객체에 대신 호출하는 옵션  |
 | construct\(target, args\) | new를 통해서 함수를 호춯할 때 그 행동을 가로채 프록시 객체에 대신 호출하는 옵션  |
-| getOwnPropertyDescriptor |  |
-| defineProperty |  |
-| getPrototypeOf |  |
-| setPrototypeOf |  |
-| ownKeys |  |
-| preventExtensions |  |
-| isExtensible |  |
 
  프록시를 이용하여 객체 생성을 재정의할 수 있으며, 객체의 여러가지 기능을 확장할 수 있게 해줍니다. 어떤 특정 동작을 할 때마다 설정해 둔 핸들러가 실행되기 때문에 자동화 작업에도 사용할 수 있을 것 같습니다. 
 
