@@ -11,7 +11,6 @@ $npm i -g typescript
 $npm outdated -g typescript
 $tsc -v
 $tsc index.ts
-$
 ```
 
 

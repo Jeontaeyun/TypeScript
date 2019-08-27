@@ -8,8 +8,6 @@
 
 자바스크립트 MDN 문서에서도 반복기와 생성기를 반복 개념을 핵심 언어 내로 가져와 for...of 루프의 동작을 사용자가 정의하는 메커니즘으로 제공한다고 설명되어 있습니다.
 
-
-
 {% hint style="info" %}
 **Iteration Protocol**
 
@@ -27,6 +25,8 @@ Iterable은 반복 가능한 객체를 의미하며 Iterable로 평가되면 **f
 {% endhint %}
 
 ### 반복기 \| Iterator
+
+ Iterator는 next\(\)메소드를 이용해 데이터에 순차적으로 접근이 가능한 Object이다. 
 
 ```javascript
 const iterator = (data) => ({
@@ -82,6 +82,8 @@ for(const a of iterator([1,2,3]))console.log(a);
  Generator는 일반적으로 Iterator를 쉽게 구현하기 위해 나온 문법이다.
 
  생성기는 반복기가 한 번 생성하면 그저 무한히 반복하고 중간의 중단점을 만들어 주지 못한다는 불편함을 해결하기 위해 나왔습니다. 
+
+ generator 함수가 실행 중 yield를 만날 경우, 해당 함수는 그 상태로 정지 되며, 반환 값을 next\(\)를 호출한 쪽으로 전달 하게 됩니다. 이후 해당 함수는 일반적인 경우 처럼 종료 되는 것이 아니라 그 상태로 유지하게 됩니다. 
 
  **PS. Generator함수는 화살표 함수를 이용해 정의할 수 없다.**
 

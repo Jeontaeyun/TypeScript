@@ -123,7 +123,7 @@ const value = false;               // Boolean 타입
         &#xC54A;&#xB294; &#xC774;&#xC0C1; 1&#xC529; &#xC99D;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>&#xBB38;&#xC790;&#xC5F4; &#xB9AC;&#xD130;</b>
+      <td style="text-align:left"><b>&#xBB38;&#xC790;&#xC5F4; &#xB9AC;&#xD130;&#xB7F4; </b>
       </td>
       <td style="text-align:left">
         <p>string &#xD0C0;&#xC785;&#xC758; &#xD655;&#xC7A5; &#xD0C0;&#xC785;&#xC73C;&#xB85C;
@@ -148,23 +148,27 @@ const value = false;               // Boolean 타입
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">Array</td>
+      <td style="text-align:left"><b>Array</b>
+      </td>
       <td style="text-align:left">&#xBC30;&#xC5F4; &#xC694;&#xC18C;&#xC5D0; &#xB300;&#xC751;&#xD558;&#xB294;
         &#xD0C0;&#xC785;</td>
     </tr>
     <tr>
-      <td style="text-align:left">Tuple</td>
+      <td style="text-align:left"><b>Tuple</b>
+      </td>
       <td style="text-align:left">&#xBC30;&#xC5F4; &#xC694;&#xC18C;&#xAC00; n&#xAC1C;&#xB85C; &#xC815;&#xD574;&#xC9C8;
         &#xB54C; &#xAC01; &#xC694;&#xC18C;&#xBCC4;&#xB85C; &#xD0C0;&#xC785;&#xC744;
         &#xC9C0;&#xC815;&#xD55C; &#xD0C0;&#xC785;</td>
     </tr>
     <tr>
-      <td style="text-align:left">Function</td>
+      <td style="text-align:left"><b>Function</b>
+      </td>
       <td style="text-align:left">&#xD568;&#xC218; &#xD0C0;&#xC785;&#xC740; &#xD638;&#xCD9C; &#xC2DC;&#xADF8;&#xB2C8;&#xCC98;&#xB97C;
         &#xD3EC;&#xD568;&#xD558;&#xB3C4;&#xB85D; &#xC815;&#xC758;&#xD55C; &#xD0C0;&#xC785;</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xC0DD;&#xC131;&#xC790;</td>
+      <td style="text-align:left"><b>&#xC0DD;&#xC131;&#xC790;</b>
+      </td>
       <td style="text-align:left">
         <p>&#xD558;&#xB098;&#xC758; &#xAC1D;&#xCCB4;(&#xD074;&#xB798;&#xC2A4;&#xB85C;&#xBD80;&#xD130;
           &#xC0DD;&#xC131;)&#xAC00; &#xC5EC;&#xB7EC; &#xC0DD;&#xC131;&#xC790;&#xC758;
@@ -175,11 +179,13 @@ const value = false;               // Boolean 타입
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Class</td>
+      <td style="text-align:left"><b>Class</b>
+      </td>
       <td style="text-align:left">&#xAC1D;&#xCCB4; &#xD0C0;&#xC785;</td>
     </tr>
     <tr>
-      <td style="text-align:left">Interface</td>
+      <td style="text-align:left"><b>Interface</b>
+      </td>
       <td style="text-align:left">&#xAC1D;&#xCCB4; &#xD0C0;&#xC785;</td>
     </tr>
   </tbody>
@@ -187,9 +193,9 @@ const value = false;               // Boolean 타입
 
 | 구분  | 설명  |
 | :--- | :--- |
-| 유니언\(Union\) | 2개 이상의 타입을 하나의 타입으로 정의한 타입  |
-| 인터섹션\(Intersection\) | 두 타입을 합쳐 하나로 만들 수 있는 타입 |
-| 특수 타입  | void, undefined, null 과 같은 타입  |
+| **유니언\(Union\)** | 2개 이상의 타입을 하나의 타입으로 정의한 타입  |
+| **인터섹션\(Intersection\)** | 두 타입을 합쳐 하나로 만들 수 있는 타입 |
+| **특수 타입**  | void, undefined, null 과 같은 타입  |
 
 ### 변수의 타입 지정
 
