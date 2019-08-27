@@ -42,3 +42,27 @@
 
 ### 디바운싱 \| Debouncing
 
+ 매우 짧은 시간에 다수 발생하는 이벤트\(스크롤, 윈도우 크기 재조정 등 등\)를 처리할 때 이로 인해 발생하는 성능 저하를 막기 위해서 디바운싱을 사용해야 합니다. 
+
+  아래는 바닐라 자바스크립트로 디바운싱을 구현한 것 입니다. 디바운싱의 올바른 구현 방법은 몇 가지 함수 호출을 한 개의 그룹으로 묶고 특정 시간이 지난 후에야만 호출 될 수 있도록 구조화 하는 것 입니다.
+
+```javascript
+function debounce(fn, delay){
+    // 타이머 선언
+    let timer = null;
+    // 타이머 변수에 접근 가능한 클로저 함
+    return function(){
+        // 클로져 함수 안에서 this와 arguments 변수로 디바운싱 함수의 스코프와 변수를 접근한다. 
+        let context = this;
+        let args = arguments;
+        //만약 이벤트가 호출되면 타이머를 초기화 하고 다시 시
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+            fn.apply(context, args);
+            // fn 안의 this는 window일 것이다. 이벤트 리스너 안에서 쓰게 된다면 상위 이벤트 리스너의 this와
+            // 다를 것이기 때문에 this를 바인딩 해주어야 한다. 
+        },delay);
+    }
+}
+```
+

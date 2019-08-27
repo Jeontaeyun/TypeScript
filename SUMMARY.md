@@ -15,6 +15,7 @@
   * [자바스크립트의 변수 선언자](javascript/basic/undefined.md)
   * [자바스크립트의 문자열](javascript/basic/string.md)
 * [자바스크립트의 객체](javascript/untitled/README.md)
+  * [프록시 객체\(ES6\)](javascript/untitled/proxy.md)
   * [객체 \| Object](javascript/untitled/or-object.md)
   * [자바스크립트 객체 지향 프로그래밍](javascript/untitled/undefined-1/README.md)
     * [자바스크립트의 상속](javascript/untitled/undefined-1/undefined-1.md)

@@ -58,7 +58,7 @@ for(const a of iterator([1,2,3]))console.log(a);
     <tr>
       <td style="text-align:left">[Symbol.iterator]()</td>
       <td style="text-align:left">Iterator&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC8FC;&#xB294; &#xBA54;&#xC18C;&#xB4DC;
-        &#xBC18;&#xB4DC;&#xC2DC; Iterator Object&#xB97C; &#xBC18;&#xD658;&#xD574;&#xC57C;&#xD569;&#xB2C8;</td>
+        &#xBC18;&#xB4DC;&#xC2DC; Iterator Object&#xB97C; &#xBC18;&#xD658;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;</td>
     </tr>
     <tr>
       <td style="text-align:left">next()</td>
@@ -79,7 +79,9 @@ for(const a of iterator([1,2,3]))console.log(a);
   </tbody>
 </table>### 생성기 \| Generator
 
- Generator는 일반적으로 Iterator를 쉽게 구현하기 위해 나온 문법이다. 생성기는 반복기가 한 번 생성하면 그저 무한히 반복하고 중간의 중단점을 만들어 주지 못한다는 불편함을 해결하기 위해 나왔습니다. 
+ Generator는 일반적으로 Iterator를 쉽게 구현하기 위해 나온 문법이다.
+
+ 생성기는 반복기가 한 번 생성하면 그저 무한히 반복하고 중간의 중단점을 만들어 주지 못한다는 불편함을 해결하기 위해 나왔습니다. 
 
  **PS. Generator함수는 화살표 함수를 이용해 정의할 수 없다.**
 
