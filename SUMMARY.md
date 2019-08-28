@@ -73,6 +73,7 @@
 * [타입스크립트 시작하기](typescript/typescript-start/README.md)
   * [타입스크립트?](typescript/typescript-start/undefined.md)
   * [타입스크립트 환경 설정](typescript/typescript-start/undefined-2.md)
+  * [타입스크립트 아키텍쳐](typescript/typescript-start/undefined-1.md)
 * [타입스크립트 변수선언과 기본타입](typescript/typescript-value/README.md)
   * [변수 선언](typescript/typescript-value/undefined.md)
   * [자바스크립트의 내장 타입](typescript/typescript-value/undefined-1.md)

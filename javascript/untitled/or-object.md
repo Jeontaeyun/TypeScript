@@ -29,7 +29,8 @@
 | **Object.assign\(목표, 소스1, 소스2, ...\)** | 객체를 얕은 복사하는 메소드입니다. 깊은 복사는 할 수 없습니다. 소스들을 목표에 모두 복사해서 합칩니다. 중복된 값은 덮어 씌웁니다. |
 | **Object.is\(값1, 값2\)** | 두 값이 같은 지 비교합니다.  |
 | **Object.values\(객체\)** | Object.keys\(\)에 대응하는 메소드로 객체의 enumerable한 속성값들만 배열로 만들어 줍니다. 함수형 프로그래밍에 도움됩니다. |
-| **Object.entries\(객체**\) | Object.keys와 Object.values를 함쳐놓은 메소드로 함수형 프록래밍에 도움이 됩니다.  |
+| **Object.entries\(객체**\) | Object.keys와 Object.values를 합쳐놓은 메소드로 함수형 프로그래밍에 도움이 됩니다. 2차원 배열의 형태로 객체를 변환합니다. |
+| **Object.fromEntries\(2차원 배열\)** | Object.entries\(객체\)의 반대 버전으로 2차원 배열을 객체로 변환해주는 메소드 입니다. ES10 부터 지원합니다. |
 
 {% hint style="info" %}
 **네이티브 자바스크립트로 깊은 복사를 하는 방법**

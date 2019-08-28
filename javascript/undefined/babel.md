@@ -2,11 +2,9 @@
 
 ## 바벨 Babel.js
 
- 바벨\(BabelJS\)는 ES2015+코드를 ES5로 바꿔주는 자바스크립트 라이브러리입니다. 
+ **바벨\(BabelJS\)**는 **ES2015+코드를 ES5로 바꿔주는 자바스크립트 라이브러리**입니다. 
 
-ES2015+는 구형 브라우저에서 지원하지 않는 호환성의 문제가 발생합니다. 아직 IE의 유저가 많기 때문에 Babel을 통해서 ES5 언어로 컴파일 해주어야 합니다.
-
-
+ES2015+는 구형 브라우저에서 지원하지 않는 **호환성**의 문제가 발생합니다. 아직 IE의 유저가 많기 때문에 Babel을 통해서 ES5 언어로 컴파일 해주어야 합니다.
 
 ### 바벨 설치 
 
@@ -18,7 +16,7 @@ $npm install -dev @babel/cli @babel/core @babel/preset-env @babel/preset-stage-2
 
 ### 바벨 Package.json 설정 
 
-01. babelrc 파일을 만들어 설치한 preset을 연결합니다.
+01. .babelrc 파일을 만들어 설치한 preset을 연결합니다.
 
 ```javascript
 // .babelrc

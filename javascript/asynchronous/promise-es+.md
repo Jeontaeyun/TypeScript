@@ -69,7 +69,7 @@ Promise.all([p1, p2, p3]).then((result) => {
 
  ES2018 이후 부터는 Promise에 then과 catch 외에도 **finally**가 추가되어 Promise의 성공, 실패 여부와 상관없이 무조건 실행되는 메서드를 추가할 수 있습니다.
 
-```text
+```javascript
 Promise.resolve("hello World")
     .then((msg) => Promise.resolve(msg))
     .finally(()=>console.log("finally!")
