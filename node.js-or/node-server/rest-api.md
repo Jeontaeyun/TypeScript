@@ -24,7 +24,11 @@ description: Representational State Transfer
 
 #### API EndPoint \| 엔드 포인트
 
+### REST API 장점
 
+1. 프론트 엔드와 백엔드의 완벽한 분리가 가능하다**\(생산성 향상 및 분업화\)**
+2. 코드의 **재사용성** 증가 - 서로 다른 웹페이지에서 동일한 API 호출이 가능
+3. 확장성 증가와 사용의 용이함 - **멀티 플랫폼**
 
 ### REST API 규칙 
 
@@ -48,5 +52,6 @@ description: Representational State Transfer
 2. resourcre는 명사로 구성
 3. URI에서는 언더바\(\_\)보다는 하이픈\(-\)을 권장
 4. URI 경로에는 소문자가 적합합니다
-5. 파일 확장자는 URI에 포함시키지 않
+5. 파일 확장자는 URI에 포함시키지 않는다
+6. 리소스 간의 관계를 표현할 때에는 **/자원/:id/자원** 형태를 사용해야한다
 

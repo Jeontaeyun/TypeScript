@@ -2,7 +2,7 @@
 
 ## 배열 \| Array
 
- 자바스크립트의 배열은 자료구조의 연결리스트, 배열, 큐, 스택 등 다양하게 사용할 수 있는 만능 배열입니다. 따라서 정말 많이 사용되기에 배열에 관련된 메소드는 반드시 알아두어야 합니다.
+ 자바스크립트의 배열은 자료구조의 **연결리스트**, **배열**, **큐**, **스택** 등 다양하게 사용할 수 있는 만능 배열입니다. 따라서 정말 많이 사용되기에 배열에 관련된 메소드는 반드시 알아두어야 합니다.
 
 ### 배열 관련 메소드
 
@@ -38,26 +38,30 @@
         &#xC815; &#xBC18;&#xB300;&#xB85C; &#xB4A4;&#xC9D1;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.push(&#xD56D;&#xBAA9;)</td>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.push(&#xD56D;&#xBAA9;)</b>
+      </td>
       <td style="text-align:left">&#xBC30;&#xC5F4;&#xC758; &#xB4A4;&#xC5D0; &#xC0C8;&#xB85C;&#xC6B4; &#xAC12;&#xC744;
         &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;. &#xD574;&#xB2F9; &#xC791;&#xC5C5;
         &#xD6C4; &#xCD94;&#xAC00;&#xB41C; &#xAC12;&#xC744; &#xC801;&#xC6A9;&#xD55C;
         &#xBC30;&#xC5F4;&#xC758; &#xAE38;&#xC774;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.pop()</td>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.pop()</b>
+      </td>
       <td style="text-align:left">&#xB9C8;&#xC9C0;&#xB9C9; &#xC694;&#xC18C;&#xB97C; &#xC81C;&#xAC70;&#xD55C;
         &#xD6C4; &#xADF8; &#xC694;&#xC18C;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.unshift(&#xD56D;&#xBAA9;)</td>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.unshift(&#xD56D;&#xBAA9;)</b>
+      </td>
       <td style="text-align:left">&#xBC30;&#xC5F4;&#xC758; &#xC55E;&#xC5D0; &#xC0C8;&#xB85C;&#xC6B4; &#xAC12;&#xC744;
         &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;. &#xD574;&#xB2F9; &#xC791;&#xC5C5;
         &#xD6C4; &#xCD94;&#xAC00;&#xB41C; &#xAC12;&#xC744; &#xC801;&#xC6A9;&#xD55C;
         &#xBC30;&#xC5F4;&#xC758; &#xAE38;&#xC774;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.shift()</td>
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.shift()</b>
+      </td>
       <td style="text-align:left">&#xBC30;&#xC5F4;&#xC758; &#xC55E;&#xC5D0; &#xAC12;&#xC744; &#xBE7C;&#xB0C5;&#xB2C8;&#xB2E4;.
         &#xD574;&#xB2F9; &#xC791;&#xC5C5;&#xC73C;&#xB85C; &#xBE80; &#xAC12;&#xC744;
         &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
@@ -69,34 +73,33 @@
         &#xCD94;&#xAC00;&#xD558;&#xB294; &#xBA54;&#xC18C;</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.map((&#xAC12;, &#xC790;&#xB9BF;&#xC218;)=&gt;{return})</td>
-      <td
-      style="text-align:left">
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.map((&#xAC12;, &#xC790;&#xB9BF;&#xC218;)=&gt;{return})</b>
+      </td>
+      <td style="text-align:left">
         <p>&#xBC30;&#xC5F4;&#xC758; &#xC694;&#xC18C;&#xB9C8;&#xB2E4; &#xBC18;&#xBCF5;&#xBB38;&#xC744;
           &#xB3CC;&#xBA70; return &#xAC12;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC0C8;&#xB85C;&#xC6B4;
           &#xBC30;&#xC5F4;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xC8FC;&#xB294; &#xBA54;&#xC18C;&#xB4DC;.
           forEach&#xC640; &#xB2E4;&#xB974;&#xAC8C; &#xBC30;&#xC5F4;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
         <p>&#xB2E8;, &#xBC30;&#xC5F4; &#xC548;&#xC5D0; &#xAC1D;&#xCCB4;&#xAC00; &#xC788;&#xC73C;&#xBA74;
           &#xADF8; &#xAC1D;&#xCCB4;&#xB294; &#xACF5;&#xC720;&#xB41C;&#xB2E4;.</p>
-        </td>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.forEach((&#xAC12;, &#xC790;&#xB9BF;&#xC218;)=&gt;{&#xC870;&#xAC74;})</td>
-      <td
-      style="text-align:left">
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.forEach((&#xAC12;, &#xC790;&#xB9BF;&#xC218;)=&gt;{&#xC870;&#xAC74;})</b>
+      </td>
+      <td style="text-align:left">
         <p>&#xBC30;&#xC5F4;&#xC548;&#xC758; &#xD56D;&#xBAA9;&#xC744; &#xBC18;&#xBCF5;&#xD558;&#xC5EC;
           &#xC870;&#xC791;&#xD558;&#xB294; &#xBA54;&#xC18C;&#xB4DC;, &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB85C;
           &#xB4E4;&#xC5B4;&#xAC00;&#xB294; &#xD568;&#xC218;&#xC5D0;&#xB294; &#xD56D;&#xBAA9;&#xC744;
           &#xC5B4;&#xB5BB;&#xAC8C; &#xC870;&#xC791;&#xD560;&#xC9C0; &#xC801;&#xC5B4;&#xC8FC;&#xBA74;&#xB429;&#xB2C8;&#xB2E4;.</p>
         <p>map&#xACFC; &#xB2E4;&#xB974;&#xAC8C; &#xBC30;&#xC5F4;&#xC744; &#xBC18;&#xD658;&#xD558;&#xC9C0;
           &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-        </td>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.reduce((&#xB204;&#xC801;&#xAC12;, &#xD604;&#xC7BF;&#xAC12;,
-        &#xC778;&#xB371;&#xC2A4;, &#xC694;&#xC18C;)=&gt;{return},&#xCD08;&#xAE30;&#xAC12;)</td>
-      <td
-      style="text-align:left">&#xCD08;&#xAE30;&#xAC12;&#xACFC; &#xB204;&#xC801;&#xAC12;&#xC744; &#xD1B5;&#xD574;
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.reduce((&#xB204;&#xC801;&#xAC12;, &#xD604;&#xC7BF;&#xAC12;, &#xC778;&#xB371;&#xC2A4;, &#xC694;&#xC18C;)=&gt;{return},&#xCD08;&#xAE30;&#xAC12;)</b>
+      </td>
+      <td style="text-align:left">&#xCD08;&#xAE30;&#xAC12;&#xACFC; &#xB204;&#xC801;&#xAC12;&#xC744; &#xD1B5;&#xD574;
         &#xBC30;&#xC5F4;&#xC758; &#xC694;&#xC18C;&#xB97C; &#xBC18;&#xBCF5;&#xD558;&#xBA70;
         &#xB3D9;&#xC791;&#xC744; &#xC218;&#xD589;&#xD558;&#xB294; &#xBA54;&#xC18C;&#xB4DC;.
         &#xBC18;&#xBCF5;&#xB418;&#xB294; &#xBAA8;&#xB4E0; &#xACF3;&#xC5D0; reduce&#xB97C;
@@ -109,9 +112,9 @@
         &#xBD80;&#xD130; &#xC2DC;&#xC791;&#xD569;&#xB2C8;&#xB2E4;.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&#xBC30;&#xC5F4;.filter((&#xD56D;&#xBAA9;)=&gt;{&#xC870;&#xAC74;})</td>
-      <td
-      style="text-align:left">return&#xC73C;&#xB85C; true&#xB97C; &#xBC18;&#xD658;&#xD558;&#xB294; &#xC870;&#xAC74;&#xB9CC;
+      <td style="text-align:left"><b>&#xBC30;&#xC5F4;.filter((&#xD56D;&#xBAA9;)=&gt;{&#xC870;&#xAC74;})</b>
+      </td>
+      <td style="text-align:left">return&#xC73C;&#xB85C; true&#xB97C; &#xBC18;&#xD658;&#xD558;&#xB294; &#xC870;&#xAC74;&#xB9CC;
         &#xBC18;&#xD658;&#xD574; &#xBC30;&#xC5F4;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC8FC;&#xB294;
         &#xD544;&#xD130; &#xBA54;&#xC18C;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.</td>
     </tr>
