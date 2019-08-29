@@ -14,6 +14,8 @@ NodeList [div, div, div, div, div, ...]
 
  **유사 배열\(Array-like\)** 은 배열과 같이 key값으로 숫자를 가지고, length를 나타내는 메소드가 있는 객체를 말합니다. 보통 다음과 같은 방식으로 구현됩니다.
 
+함수의 매개변수를 나타내는 **arguments도 유사배열**입니다. 
+
 ```javascript
 const arrayLike = {
     0 : "div",
@@ -35,7 +37,16 @@ const arrayLike = {
 
  유사 배열에서 배열 메소드를 사용하기 위해서는 배열의 프로토타입을 복사해야 합니다. 
 
-```text
-Array.prototype.forEach.call(
+```javascript
+Array.prototype.forEach.call(nodes, function(item){console.log(item})
+[].forEach.call(nodes, function(item){console.log(item)})
+```
+
+  call은 객체의 메소드에 붙어 내부의 this를 바꾸어주는 역할을 합니다. 
+
+ 최신 자바스크립트에서는 Array.from\(\)메소드를 통해 유사 배열을 손 쉽게 배열로 바꿀 수 있습니다.
+
+```javascript
+Array.from(유사배열).forEach(function(item){console.log(item)});
 ```
 
