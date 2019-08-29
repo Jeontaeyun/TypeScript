@@ -85,7 +85,8 @@ const value = false;               // Boolean 타입
     <tr>
       <td style="text-align:left"><b>string</b>
       </td>
-      <td style="text-align:left">&#xBB38;&#xC790;&#xC5F4; &#xD0C0;&#xC785;</td>
+      <td style="text-align:left">&#xBB38;&#xC790;&#xC5F4; &#xD0C0;&#xC785; &quot;&quot;(&#xD070;&#xB530;&#xC634;&#xD45C;)&#xC0AC;&#xC6A9;
+        &#xAD8C;&#xC7A5;</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>number</b>
@@ -93,7 +94,7 @@ const value = false;               // Boolean 타입
       <td style="text-align:left">
         <p>&#xC22B;&#xC790; &#xD0C0;&#xC785;</p>
         <p>10&#xC9C4;&#xC218; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; 16&#xC9C4;&#xC218;,
-          2&#xC9C4;&#xC218;, 8&#xC9C4;&#xC218; &#xC9C0;&#xC6D0;&#xD55C;&#xB2E4;.</p>
+          2&#xC9C4;&#xC218;, 8&#xC9C4;&#xC218; &#xC9C0;&#xC6D0;&#xD55C;&#xB2E4;.(ES6)</p>
       </td>
     </tr>
     <tr>
@@ -191,13 +192,70 @@ const value = false;               // Boolean 타입
   </tbody>
 </table>#### 기타 타입
 
-| 구분  | 설명  |
-| :--- | :--- |
-| **유니언\(Union\)** | 2개 이상의 타입을 하나의 타입으로 정의한 타입  |
-| **인터섹션\(Intersection\)** | 두 타입을 합쳐 하나로 만들 수 있는 타입 |
-| **특수 타입**  | void, undefined, null 과 같은 타입  |
-
-### 변수의 타입 지정
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xAD6C;&#xBD84;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><b>&#xC720;&#xB2C8;&#xC5B8;(Union)</b>
+      </td>
+      <td style="text-align:left">
+        <p>2&#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xD0C0;&#xC785;&#xC744; &#xD558;&#xB098;&#xC758;
+          &#xD0C0;&#xC785;&#xC73C;&#xB85C; &#xC815;&#xC758;&#xD55C; &#xD0C0;&#xC785;</p>
+        <p>let x : string | number; &#xACFC; &#xAC19;&#xC774; <b>|</b> &#xAE30;&#xD638;&#xB97C;
+          &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xC778;&#xD130;&#xC139;&#xC158;(Intersection)</b>
+      </td>
+      <td style="text-align:left">
+        <p>&#xB450; &#xD0C0;&#xC785;&#xC744; &#xD569;&#xCCD0; &#xD558;&#xB098;&#xB85C;
+          &#xB9CC;&#xB4E4; &#xC218; &#xC788;&#xB294; &#xD0C0;&#xC785;&#xC73C;&#xB85C; <b>&amp;</b>&#xB97C;
+          &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>interface Cat {leg:number;}</p>
+        <p>interface Bird {wing:number;}</p>
+        <p>let birdCat: Cat&amp;Bird = {leg:4, wing:2};</p>
+        <p>&#xC704;&#xC640; &#xAC19;&#xC774; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xD2B9;&#xC218; &#xD0C0;&#xC785; </b>
+      </td>
+      <td style="text-align:left">
+        <p>void, undefined, null &#xACFC; &#xAC19;&#xC740; &#xD0C0;&#xC785;</p>
+        <p><b>void</b>&#xB294; &#xBE48; &#xAC12;&#xC744; &#xB098;&#xD0C0;&#xB0B4;&#xB294;
+          &#xD0C0;&#xC785;&#xC73C;&#xB85C; &#xD568;&#xC218;&#xC5D0; &#xBC18;&#xD658;&#xAC12;&#xC774;
+          &#xC5C6;&#xC744; &#xB54C; void &#xD0C0;&#xC785;&#xC744; &#xC120;&#xC5B8;&#xD560;
+          &#xC218; &#xC788;&#xACE0; undefined&#xB098; null &#xAC12;&#xC744; &#xBC1B;&#xC744;
+          &#xB54C; &#xC0AC;&#xC6A9;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>non-nullable</b>
+      </td>
+      <td style="text-align:left">null&#xC774;&#xB098; undefined&#xB97C; &#xD5C8;&#xC6A9;&#xD558;&#xC9C0;
+        &#xC54A;&#xB294; &#xD0C0;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>&#xB8E9;&#xC5C5;(Lookup)</b>
+      </td>
+      <td style="text-align:left">&#xC778;&#xD130;&#xD398;&#xC774;&#xC2A4;&#xB97C; &#xC774;&#xC6A9;&#xD574;
+        &#xD0A4; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD560; &#xC218; &#xC788;&#xB294;
+        &#xD0C0;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><b>any</b>
+      </td>
+      <td style="text-align:left">&#xC5B4;&#xB5A4; &#xAC12;&#xC774;&#xB4E0; &#xB4E4;&#xC5B4;&#xAC00;&#xB294;
+        &#xCD5C;&#xC0C1;&#xC704; &#xD0C0;&#xC785;</td>
+    </tr>
+  </tbody>
+</table>### 변수의 타입 지정
 
  타입스크립트는 강력한 타입을 지원합니다. 변수에 타입을 지정하려면 다음과 같은 형식으로 선언합니다.
 
