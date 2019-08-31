@@ -79,6 +79,10 @@
   * [변수 선언](typescript/typescript-value/undefined.md)
   * [자바스크립트의 내장 타입](typescript/typescript-value/undefined-1.md)
   * [타입스크립트의 내장 타입](typescript/typescript-value/undefined-2.md)
+* [타입스크립트 객체 지향 프로그래밍](typescript/object-oriented-programming/README.md)
+  * [객체 지향 프로그래밍과 클래스](typescript/object-oriented-programming/undefined.md)
+  * [인터페이스](typescript/object-oriented-programming/undefined-1.md)
+  * [객체 지향 다형성](typescript/object-oriented-programming/undefined-2.md)
 
 ## NODE.JS \| 노드제이에스
 
