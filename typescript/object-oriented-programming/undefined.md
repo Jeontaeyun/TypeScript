@@ -117,13 +117,41 @@ const Stark = new People();    // 인스턴스화로 객체 생성
   * 합성\(Composition\) 관계
   * 집합\(Aggregation\) 관계
 
-#### 합성 관계
+#### 합성 관계 \| Composition Relationship
 
+ 합성 관계는 전체가 부분을 포함하며 강한 관계입니다. 
 
+```typescript
+class Pencil{}
+class PencilCase {
+    private pencil;
+    constructor(){
+        this.pencil = new Pencil();
+    }
+}
+let myPencilCase = new PencilCase();
+myPencilCase = null
+```
 
-#### 집합 관계 
+ 위와 같은 포함관계에서 PencilCase에 선언된 Pencil 객체는 PencilCaser가 null이 되면 소멸하는 강한 관계를 가집니다. 
 
+#### 집합 관계 \| Aggregation Relationship
 
+ 집합 관는 전체가 부분을 포함하며 약한 관계입니다.
+
+```typescript
+class Pencil{}
+class PencilCase {
+    private pencil: Pencil;
+    constructor(pencil : Pencil){
+        this.pencil = pencil;
+    }
+}
+let myPencil = new Pencil();
+let myPencilCase = new PencilCase(myPencil);
+```
+
+ 위의 포함관계의 경우 Pencil과 PencilCase가 같은 생명 주기를 가지지 않기 때문에 약한 포함관계라고 합니다. 
 
 ### 추상 클래스 Abstract Class
 
