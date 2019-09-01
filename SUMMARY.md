@@ -83,6 +83,7 @@
   * [객체 지향 프로그래밍과 클래스](typescript/object-oriented-programming/undefined.md)
   * [인터페이스](typescript/object-oriented-programming/undefined-1.md)
   * [객체 지향 다형성](typescript/object-oriented-programming/undefined-2.md)
+  * [정적 변수와 정적 메서드](typescript/object-oriented-programming/undefined-3.md)
 
 ## NODE.JS \| 노드제이에스
 

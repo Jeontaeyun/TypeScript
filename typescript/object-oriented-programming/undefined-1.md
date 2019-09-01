@@ -41,6 +41,16 @@ class Stark implements People {
 
  **인터페이스는 객체의 구조를 고정할 수 있다는 점에서 유용**합니다
 
+### 배열 요소 타입을 객체 리터럴 타입으로 사용
+
+ 배열 요소가 객체 리터럴이면 배열 타입을 선언할 때 배열 요소의 타입을 객체 리터럴로 지정해 타입 안정성을 강화할 수 있습니다. 
+
+```typescript
+let person : {name: string, city:string}[];
+```
+
+ 위와 같이 선언하면 해당 배열 안의 데이터는 반드시 {name : "문자열", city: "문자열"}의 형태여야 합니다. 
+
 ### 배열 요소 타입과 인터페이스 
 
  클래스는 객체 리터럴의 타입으로 사용할 수 있습니다. 배열 요소가 객체 리터럴 이라면 배열 타입을 타입을 선언할 때 클래스를 이용할 수 있습니다. 
@@ -55,13 +65,16 @@ interface Person{
 let person : Person[];
 ```
 
-### 배열 요소 타입을 객체 리터럴 타입으로 사용
+### 함수 타입과 인터페이스
 
- 배열 요소가 객체 리터럴이면 배열 타입을 선언할 때 배열 요소의 타입을 객체 리터럴로 지정해 타입 안정성을 강화할 수 있습니다. 
+ 인터페이스의 역할은 다양한데, 클래스의 구조를 정의하기도 하고, 자바스크립트 객체 모양을 정의하기도 하며 **익명 함수에 대한 타입을 정의할 수 있는 기능도 있다**.
 
 ```typescript
-let person : {name: string, city:string}[];
+interface FuncType {
+    (data: string, next?: boolean): number;
+}
+let FuncInterface : FuncType = (data:string, next:boolean) => {
+...
+}
 ```
-
- 위와 같이 선언하면 해당 배열 안의 데이터는 반드시 {name : "문자열", city: "문자열"}의 형태여야 합니다. 
 
