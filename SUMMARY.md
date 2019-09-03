@@ -85,6 +85,8 @@
   * [객체 지향 다형성](typescript/object-oriented-programming/undefined-2.md)
   * [타입스크립트 Getter 와 Setter](typescript/object-oriented-programming/getter-setter.md)
   * [정적 변수와 정적 메서드](typescript/object-oriented-programming/undefined-3.md)
+* [타입스크립트 모듈](typescript/module/README.md)
+  * [모듈이란?](typescript/module/module.md)
 
 ## NODE.JS \| 노드제이에스
 
