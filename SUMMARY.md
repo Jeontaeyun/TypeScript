@@ -87,6 +87,7 @@
   * [정적 변수와 정적 메서드](typescript/object-oriented-programming/undefined-3.md)
 * [타입스크립트 모듈](typescript/module/README.md)
   * [모듈이란?](typescript/module/module.md)
+  * [외부 모듈 export](typescript/module/export.md)
 
 ## NODE.JS \| 노드제이에스
 

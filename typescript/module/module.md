@@ -63,9 +63,45 @@ console.log(Stark.getName());       // Taeyun
 
 #### 네임스페이스 하나를 여러 파일에 선언
 
+ 네임스페이스를 이용하면 여러 파일에 걸쳐 하나의 네임스페이스의 이름 공간을 공유할 수 있습니다. 
+
+즉, 네임스페이스의 이름만 같다면 컴파일 시에 **명시적으로 참조 경로를 추가하지 않아도 타입스크립트 컴파일러가 알아서 네임스페이스 간의 참조 관계를 고려해 컴파일** 합니다.
+
+단, 프로젝트 단위의 컴파일이 아니니 특정 파일만 컴파일 하고 싶을 때는 참조 경로를 다음과 같이 명시해주어야 합니다.
+
+```typescript
+/// <reference path ='people.ts'/>
+
+namespace People{
+    ...
+}
+```
+
+ **참조 경로\(Reference Path\)**를 선언하기 위해서 **트리플 슬래시\(///\)**를 사용 합니다. 
+
 #### 네임스페이스 모듈
 
+ 네임스페이스는 export를 이용해 모듈로 선언할 수 있습니다. 모듈로 선언된 네임스페이스는 import문을 이용해 JS로 컴파일 된 뒤에 명시적으로 모듈 호출\(Import문, Require 함수 등\)을 할 수 있습니다. 
+
+```typescript
+export namespace People {...}
+```
+
 #### 네임스페이스 이름 확장
+
+ 네임스페이스 이름은 점\(.\)을 이용해 확장 가능합니다. 이를 통해 네임스페이스 간의 이름 계층을 만들 수 있습니다. 
+
+```typescript
+export namespace People{...}
+export namespace People.Greating{...}
+export namespace People.Growing{...}
+```
+
+  단, 이름 공간은 논리적인 계층을 따르며 선언되는 것이 좋으며 불러올 때\(임포트\)는 네임스페이스의 최상위 이름만을 이용해야 합니다.
+
+```typescript
+import {People} from './namespace';
+```
 
 #### 브라우저에서 네임스페이스 모듈 확장 
 
