@@ -68,11 +68,58 @@ let stringLiteral:"Stark"|"Taeyun" = "Stark";
 
 ### 룩업 타입 Lookup Type
 
- 룩업\(Lookup\)타입은 타입스크립트 2.1에 추가된 타입입니다. 주로 인덱스 접근 타입으로 불려집니다. 룩업 타입은 keyof를 통해 타입 T의 하위 타입을 생성해냅니다.
+ 룩업\(Lookup\)타입은 타입스크립트 2.1에 추가된 타입입니다. 주로 인덱스 접근 타입으로 불려집니다. 룩업 타입은 **keyof를 통해 타입 T의 하위 타입을 생성**해냅니다.
 
-### non-nullabe 타입
+```typescript
+interface Lookup {
+    name: string;
+    gender: string;
+    age: number
+}
+```
+
+### non-nullable 타입
+
+ 타입스크립트 2.0에 추가된 타입으로 컴파일러가 null이나 undefined를 엄격하게 제한하는 타입입니다. **tsconfig.json의 옵션인 strictNullChecks가 true이면 non-nullable 타입이 적용**됩니다. 
+
+```typescript
+let nonNullable : string | null | undefined = null;
+```
+
+ 만약, strictNullChecks가 true일 때 null이나 undefined를 할당하고 싶으면 유니언 타입으로 만들면 됩니다.
 
 ### 네버 타입
 
-### this 타
+ 타입스크립트 2.0 부터 내장 타입으로 추가된 타입입니다. 다음과 같은 상황에서 사용할 수 있습니다.
+
+* 닿을 수 없는코드\(Ureachable Cod\) 영역에 있는 코드
+
+  * 예를들어, 무한루프 다음의 코드들
+
+* 함수에 Throw 객체가 반환될 때
+
+### this 타입 
+
+ 인터페이스와 클래스의 하위 타입으로 인터페이스와 클래스를 참조할 수 있는 타입. this 타입은 this 키워드를 이용해 선언합니다. 
+
+```typescript
+interface ThisType {
+    hell(): this;
+    hi(): this;
+}
+```
+
+ 클래스 멤버 변수나 생성자에서 this 타입을 사용하면 this 타입은 가장 가까운 클래스의 인스턴스를 참조합니다. 
+
+```typescript
+new Calculate(1).add(3).subtract(2);
+```
+
+ 위와 같이 클래스의 메서드에 this타입\(재귀 타입\)을 사용해 메서드를 체이닝\(Chaining\)할 수 있습니다. 
+
+{% hint style="info" %}
+**플루언트 인터페이스 패턴\(Fluent Interface Pattern\)**
+
+ 자기 자신\(Self\)을 반환하는 인스턴스 메서드를 활용해 체이닝 형태로 선언하면 마치 데이터가 흐르듯 표현할 수 있는데 이런 패턴을 플루언트 인터페이스 패턴이라고 합니다.
+{% endhint %}
 

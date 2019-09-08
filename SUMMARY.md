@@ -80,6 +80,8 @@
   * [자바스크립트의 내장 타입](typescript/typescript-value/undefined-1.md)
   * [타입스크립트의 내장 타입](typescript/typescript-value/undefined-2.md)
   * [타입스크립트 고급 타입](typescript/typescript-value/undefined-3.md)
+  * [타입 선언과 변경](typescript/typescript-value/undefined-5.md)
+  * [타입 호환](typescript/typescript-value/undefined-4.md)
 * [타입스크립트 객체 지향 프로그래밍](typescript/object-oriented-programming/README.md)
   * [객체 지향 프로그래밍과 클래스](typescript/object-oriented-programming/undefined.md)
   * [인터페이스](typescript/object-oriented-programming/undefined-1.md)
