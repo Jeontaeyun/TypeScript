@@ -1,2 +1,55 @@
 # 타입스크립트 타입 정의 파일
 
+## 타입 정의 파일 Type Definition File
+
+ 자바스크립트는 수많은 업체와 개발자들에 의해서 그 생태가 발전되어 왔습니다. 자바스크립트의 오픈 소스는 대부분 라이브러리 형태로 되어 있는데 제3자에 해당\(ECMA 기관이 아닌\)하는 기관이나 개인에 의해 개발 되므로 **서드 파티 라이브러리\(Third Party Library\)**라 불립니다.
+
+ 자바스크립트 라이브러리를 타입스크립트에서 사용하기 위해선 **\*.d.ts** 파일로 된 자바스크립트 **타입 정의 파일\(Type Definition File\)**이 있어야합니다. 해당 정의 파일은 자바스크립트 라이브러리에 대한 타입 정보를 포함하고 있습니다. 
+
+
+
+### 타입 정의 파일 설치
+
+#### 1.x 버전
+
+ 1.x 버전에서는 타입 정의 파일을 설치하기 위해 타이핑이라는 도구를 이용해 설치합니다. 
+
+```bash
+$npm i -g typings
+$typings search "라이브러리이름"
+$typings install dt~underscorred --global --save
+```
+
+1.x 버전에서는 위와 같은 방식으로 타입 정의 파일을 설치하고 타입 정의 파일이 설치 되면 typings.json 파일이 추가되면서 의존 정보가 다음과 같이 추가됩니다.
+
+```javascript
+{
+    "globalDependencies":{
+        "underscore" : "registry:dt/underscore#1.8.3+20161123125004"
+    }
+}
+```
+
+ dt~는 DefinitelyTyped\(확실하게 정의된 타입\)의 약자입니다. 
+
+#### 2.x 버전
+
+ 타입스크립트 2.x버전 부터는 타입 정의 파일을 타입 어노테이션\(Type Annotationn\)을 이용해서 추가할 수 있습니다. 다음과 같이 설치합니다.
+
+```bash
+$npm i @types/underscore
+```
+
+ 위와 같이 설치하면 ./node\_modules/@types 디렉토리에 타입 정의 파일을 모아줍니다. 만약 타입 정의 파일을 다른 디렉토리에 저장하고 싶으면 다음과 같이 tsconfig.json파일을 설정해주면 됩니다.
+
+```javascript
+{
+    "compileOptions" : {
+        "typeRoots" : ["./typings"],
+        "types" : ["react", "underscore"]
+    }
+}
+```
+
+ types는 많은 타입 정의 파일을 로컬 프로젝트에 설치했을 때, 이들 중 특정 타입 정의 파일만 프로젝트에 포함하기 위해 해당 부분에 명시할 수 있는 설정입니다. 
+
