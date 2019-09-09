@@ -91,6 +91,9 @@
 * [타입스크립트 모듈](typescript/module/README.md)
   * [모듈이란?](typescript/module/module.md)
   * [외부 모듈 export](typescript/module/export.md)
+* [타입스크립트 제네릭](typescript/undefined.md)
+* [타입스크립트 타입 정의 파일](typescript/undefined-1.md)
+* [타입스크립트 프로젝트 설정](typescript/undefined-2.md)
 
 ## NODE.JS \| 노드제이에스
 
