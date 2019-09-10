@@ -91,7 +91,11 @@
 * [타입스크립트 모듈](typescript/module/README.md)
   * [모듈이란?](typescript/module/module.md)
   * [외부 모듈 export](typescript/module/export.md)
-* [타입스크립트 제네릭](typescript/undefined.md)
+* [타입스크립트 제네릭](typescript/undefined/README.md)
+  * [타입스크립트 제네릭](typescript/undefined/undefined.md)
+  * [타입스크립트 제네릭 함수](typescript/undefined/undefined-1.md)
+  * [타입스크립트 제네릭 클래스와 인터페이스](typescript/undefined/undefined-2.md)
+  * [타입스크립트 제너릭 활용](typescript/undefined/undefined-3.md)
 * [타입스크립트 타입 정의 파일](typescript/undefined-1.md)
 * [타입스크립트 프로젝트 설정](typescript/undefined-2.md)
 
