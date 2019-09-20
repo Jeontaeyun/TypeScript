@@ -11,7 +11,7 @@ class People {
 }
 const people = new People();
 people.name = "Stark";            // 속성값 설정
-console.log(people.name);         // 속성값 읽
+console.log(people.name);         // 속성값 읽기 
 ```
 
  만약 **값을 설정하거나, 읽을 때 특별한 로직을 추가하고 싶다면 get/set 키워드로 접근자와 설정자를 추가해 줄 수 있습니다**.
