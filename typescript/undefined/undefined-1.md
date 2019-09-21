@@ -62,6 +62,11 @@ function overGeneric(value1: any, value2: any){
  제너릭 함수에 타입 매개 변수를 여러 개 사용하기 위해서는 다음과 같이 타입 매개 변수를 지정해주면 됩니다. 
 
 ```typescript
-
+let arr : Array<any> = [];
+function doubleGeneric<T,K> (value1: T , value2: K): T;
+function doubleGeneric (value1: any, value2: any){
+    arr[value1] = value2;
+}
+doubleGeneric<number, string> (1, "Stark");
 ```
 
