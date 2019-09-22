@@ -18,7 +18,7 @@
 
  JWT 토큰은 JWT 비밀키를 알지 않는 이상 변조가 불가능합니다. 변조한 토큰은 시그니처를 검사할 때 걸리게 됩니다. 변조할 수 없기 때문에 내용물을 믿고 사용할 수 있습니다.
 
-#### JWT의 단
+#### JWT의 단점 
 
  JWT토큰은 용량이 크다는 단점이 있습니다. 매 요청 시 토큰이 오고 가기 때문에 데이터의 양이 증가합니다. 따라서 매번 사용자의 정보를 조회하는 방법이 더 비용이 큰지, JWT토큰을 사용해서 발생하는 데이터의 비용이 더 큰지 비교해 선택하면 됩니다. 
 
@@ -74,7 +74,7 @@ JWT 비밀키는 .env 파일에서 보관하도록 합니다.
 //middlewares.js
 const jwt = require("jsonwebtoken");
 ...
-exports.verifyToken = (req, rres, next) => {
+exports.verifyToken = (req, res, next) => {
     try{
         // req.headers.authorization 요청 헤더에 저장된 토큰을 사용
         // 사용자가 쿠키처럼 헤더에 토큰을 넣어 보
@@ -97,6 +97,26 @@ exports.verifyToken = (req, rres, next) => {
 ```
 
 **jwt.verify**는 토큰을 검증하는 메서드입니다 .
+
+### 클라이언트에서 토큰 보관
+
+ 서버 측에서 발급한 토큰을 클라이언트 측에서 보관하기 위해 다음과 같은 코드를 클라이언트 측에 작성해야 합니다. 
+
+```javascript
+if(!req.session.jwt){
+    const tokenResult = await axios.post("http://토큰 발급 URL",{
+        clientSecret = process.env.CLIENT_SECRET
+    });
+    if(tokenResult.data && tokenResult.data.code === 200){
+        req.session.jwt = tokenResult.data.token;
+        // 세션에 토큰 저장
+    }
+    else {
+        return res.json(tokenResult.data);
+        // 발급 실패 사유 응답
+    }
+}
+```
 
 
 
