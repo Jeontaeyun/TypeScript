@@ -71,11 +71,13 @@ let stringLiteral:"Stark"|"Taeyun" = "Stark";
  룩업\(Lookup\)타입은 타입스크립트 2.1에 추가된 타입입니다. 주로 인덱스 접근 타입으로 불려집니다. 룩업 타입은 **keyof를 통해 타입 T의 하위 타입을 생성**해냅니다.
 
 ```typescript
-interface Lookup {
+interface Profile {
     name: string;
     gender: string;
     age: number
 }
+
+type ProfileLookup = keyof Profile; 
 ```
 
 ### non-nullable 타입

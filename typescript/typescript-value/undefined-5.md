@@ -20,11 +20,20 @@ type <바인딩 식별자(Binding Identifier)> = 타입;
 
 ### 타입 캐스팅과 변환 Type Casting
 
- 타입 캐스팅\(Type Casting\)은 명시적으로 선언한 캐스팅 코드에 의한 타입 변경을 의미합니다. 
+ 타입 캐스팅\(Type Casting\)은 명시적으로 선언한 캐스팅 코드에 의한 타입 변경을 의미합니다. 따라서 JS 인터프리터에 의해 타입이 바뀌는 동적 타입 변환과 구분됩니다.
+
+ **타입 캐스팅은 + 연산자**를 통해 수행할 수 있습니다.
 
 ### 타입 어설션 Type Assertion
 
+ 타입 어설션\(Type Assertion\)을 이용하면 타입스크립트 컴파일러가 타입 어설션 정보를 이용해 컴파일을 수행합니다. 따라서 타입 어설션은 컴파일 과정까지만 유효하고 컴파일 후에는 사라집니다. 
 
+ 타입 어설션은 **&lt;&gt;\(Angle Bracket\)방식**과 **as 문법\(as syntax\)**를 이용한 두 가지 방법이 있습니다. 
 
+```typescript
+let assertion: number = <number>myNum;
+let sesertion: number = myNum as number;
+```
 
+&lt;&gt;는 JSX문법과 유사해 충돌을 일으키기 때문에 as 문법을 사용하는 것이 좋습니다.  
 
