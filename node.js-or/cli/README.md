@@ -97,7 +97,7 @@ $cli
 
 
 
-### Commander 라이브러리와, inquier, chalk 패키
+### Commander 라이브러리와, inquier, chalk 패키지 
 
 <table>
   <thead>
@@ -126,10 +126,10 @@ $cli
       <td style="text-align:left">
         <p>&#xCF58;&#xC194; &#xD14D;&#xC2A4;&#xD2B8;&#xC5D0; &#xC2A4;&#xD0C0;&#xC77C;&#xC744;
           &#xCD94;&#xAC00;&#xD558;&#xB294; &#xD328;&#xD0A4;&#xC9C0;.</p>
-        <p>&#xB2E8;, &#xD130;&#xBBF8;&#xB110;&#xB9C8;&#xB2E4; &#xC9C0;&#xC6D0;&#xD558;&#xB294;
+        <p>&#xB2E8;, &#xD130;&#xBBF8;&#xB110; &#xB9C8;&#xB2E4; &#xC9C0;&#xC6D0;&#xD558;&#xB294;
           &#xC0C9;&#xC774;&#xB098; &#xC2A4;&#xD0C0;&#xC77C;&#xC774; &#xB2E4;&#xB974;&#xBBC0;&#xB85C;
-          &#xBAA8;&#xB4E0; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xAC19;&#xAC8C; &#xB3D9;&#xC791;&#xD558;&#xC9C0;&#xB294;
-          &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+          &#xBAA8;&#xB4E0; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xAC19;&#xAC8C; &#xB3D9;&#xC791;
+          &#xD558;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
       </td>
     </tr>
   </tbody>

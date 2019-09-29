@@ -54,6 +54,23 @@ $npm i winston@next
 
  보통 서버를 개발할 당시에는 console.log나 console.error와 같은 console객체를 이용하지만 서버가 운영될 때는 console객체가 언제 발생했는지 파악하기 어렵고, 서버가 종료되면 로그들이 사라지기 때문에 winston을 사용하여 로그를 데이터 베이스에 저장하는 것이 좋습니다.
 
+### retire 패키지
+
+ 패키지 자체의 문제를 점검하기 위한 패키지로 이를 전역 설치해 다음과 같이 사용할 수 있습니다. 
+
+```bash
+$npm i -g retire
+$retire
+```
+
+이를 통해 취약성이 있는 패키지를 콘솔창에 보여줍니다. 또한, 보통 취약점을 확인한 후 해당 패키지를 사용할지에 대해 고민해보아야 합니다. 
+
+{% hint style="info" %}
+**npm audit fix**
+
+ npm 5.10버전 이상으로 npm audit fix 명렁어를 통해 npm이 수정할 수 있는 패키지 오류를 자동으로 수정해주는 기능이 추가되었습니다. 
+{% endhint %}
+
 ### Redis \| Remote Dictionary Server
 
  레디스는 **'키-값' 구조의 비정형 데이터를 저장하고 관리하기 위한 오픈소스 기반의 비관계형 데이터베이스 관리 시스템\(DBMS\)**입니다.

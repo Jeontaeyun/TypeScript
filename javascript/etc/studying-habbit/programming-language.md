@@ -87,7 +87,7 @@ description: 해당 페이지는 언어별 목적과 장단점에 대한 전체�
             &#xC5B8;&#xC5B4;.</li>
           <li><b>&#xC11C;&#xBC84;</b>&#xC640; &#xD504;&#xB860;&#xD2B8; &#xB458;&#xB2E4;
             &#xC0DD;&#xC0B0;&#xD560; &#xC218; &#xC788;&#xB294; &#xC7A5;&#xC810;&#xC774;
-            &#xC788;&#xB2E4;. &#xCD5C;&#xADFC; &#xAC01;&#xAD11;&#xBC1B;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;
+            &#xC788;&#xB2E4;. &#xCD5C;&#xADFC; &#xAC01;&#xAD11; &#xBC1B;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;
             &#xC5B8;&#xC5B4;&#xC774;&#xB2E4;.</li>
           <li>&#xD604;&#xC7AC;&#xC5D0;&#xB294; &#xC6F9; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C;,<b> &#xBAA8;&#xBC14;&#xC77C; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;</b>, <b>&#xB370;&#xC2A4;&#xD06C;&#xD0D1; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;</b> &#xB610;&#xD55C;
             &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;
