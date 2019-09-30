@@ -87,5 +87,110 @@
 | \_\_filename | 해당 파일명에 대한 정보를 반환하는 키워드입니다. |
 | \_\_dirname | 해당 파일의 경로에 대한 정보를 반환하는 키워드입니다.  |
 
+### module과 exports
 
+ module과 exports는 모듈을 만들어주는 객체입니다. 다음과 같이 사용할 수 있습니다.
 
+```javascript
+module.exports = {...모듈 객체};
+exports.moduleFunction = () => {...};
+exports.hi = "안녕하세요";
+```
+
+module.exports은 한 번에 대입하는 방법이고, exports는 객체에 하나씩 넣는 방법을 말합니다. module.exports와 exports가 같은 객체를 참조하기에 위와 같이 동작합니다. 
+
+### process
+
+ **process는 현재 실행되고 있는 노드 프로세스에 대한 정보**를 담고 있습니다. process에는 다양한 속성이 담겨있습니다. 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xAD6C;&#xBD84;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">process.version</td>
+      <td style="text-align:left">&#xC124;&#xCE58;&#xB41C; &#xB178;&#xB4DC;&#xC758; &#xBC84;&#xC804;&#xC744;
+        &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.arch</td>
+      <td style="text-align:left">&#xD504;&#xB85C;&#xC138;&#xC11C; &#xC544;&#xD0A4;&#xD14D;&#xCCD0; &#xC815;&#xBCF4;&#xB97C;
+        &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;. arm, x64&#xB4F1; CPU &#xC544;&#xD0A4;&#xD14D;&#xCCD0;&#xB97C;
+        &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.platform</td>
+      <td style="text-align:left">
+        <p>&#xC6B4;&#xC601;&#xCCB4;&#xC81C; &#xD50C;&#xB7AB;&#xD3FC; &#xC815;&#xBCF4;&#xB97C;
+          &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>- win32, linux, darwin, freebsd &#xB4F1;&#xC758; &#xAC12;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.pid</td>
+      <td style="text-align:left">
+        <p>&#xD604;&#xC7AC; &#xD504;&#xB85C;&#xC138;&#xC11C;&#xC758; &#xC544;&#xC774;&#xB514;&#xB97C;
+          &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xB2E4;&#xC911; &#xD504;&#xB85C;&#xC138;&#xC2A4; &#xD658;&#xACBD;&#xC5D0;&#xC11C;
+          &#xAD6C;&#xBD84;&#xC5D0; &#xB3C4;&#xC6C0;&#xC774; &#xB429;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.uptime()</td>
+      <td style="text-align:left">&#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; &#xC2DC;&#xC791;&#xB41C; &#xD6C4;
+        &#xD750;&#xB978; &#xC2DC;&#xAC04;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.
+        &#xB2E8;&#xC704;&#xB294; &#xCD08;&#xC785;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.execPath</td>
+      <td style="text-align:left">&#xB178;&#xB4DC;&#xC758; &#xACBD;&#xB85C;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.cwd()</td>
+      <td style="text-align:left">&#xD604;&#xC7AC; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xAC00; &#xC2E4;&#xD589;&#xB418;&#xB294;
+        &#xC704;&#xCE58;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.cpuUsage()</td>
+      <td style="text-align:left">&#xD604;&#xC7AC; cpu &#xC0AC;&#xC6A9;&#xB7C9;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.env</td>
+      <td style="text-align:left">
+        <p>&#xD504;&#xB85C;&#xC138;&#xC2A4;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294;
+          &#xC911;&#xC694;&#xD55C; &#xD658;&#xACBD; &#xBCC0;&#xC218;&#xB97C; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xD658;&#xACBD;&#xBCC0;&#xC218;&#xB294; .env &#xD30C;&#xC77C;&#xC5D0;
+          &#xBCF4;&#xAD00;&#xD558;&#xC5EC; &#xBCF4;&#xC548;&#xC5D0; &#xC8FC;&#xC758;&#xB97C;
+          &#xAE30;&#xC6B8;&#xC5EC;&#xC57C; &#xD569;&#xB2C8;&#xB2E4; .</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.nextTick(&#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">
+        <p>&#xC774;&#xBCA4;&#xD2B8; &#xB8E8;&#xD504;&#xAC00; &#xB2E4;&#xB978; &#xCF5C;&#xBC31;
+          &#xD568;&#xC218;&#xB4E4; &#xBCF4;&#xB2E4; nextTick&#xC758; &#xCF5C;&#xBC31;
+          &#xD568;&#xC218;&#xB97C; &#xC6B0;&#xC120;&#xC73C;&#xB85C; &#xCC98;&#xB9AC;&#xD558;&#xB3C4;&#xB85D;
+          &#xD569;&#xB2C8;&#xB2E4; .</p>
+        <p>- setImmediate&#xB098; setTimeout&#xBCF4;&#xB2E4; &#xBA3C;&#xC800; &#xC2E4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">process.exit(&#xCF54;&#xB4DC;)</td>
+      <td style="text-align:left">
+        <p>&#xC2E4;&#xD589; &#xC911;&#xC778; &#xB178;&#xB4DC; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xB97C;
+          &#xC885;&#xB8CC;&#xD569;&#xB2C8;&#xB2E4;. &#xC11C;&#xBC84;&#xC5D0; &#xC774;
+          &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xC11C;&#xBC84;&#xAC00;
+          &#xBA48;&#xCD94;&#xBBC0;&#xB85C; &#xAC70;&#xC758; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0;
+          &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+        <p>&#xB2E4;&#xB9CC;, &#xC11C;&#xBC84;&#xAC00; &#xC544;&#xB2CC; &#xB3C5;&#xB9BD;&#xC801;&#xC73C;&#xB85C;
+          &#xB3CC;&#xC544;&#xAC00;&#xB294; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758;
+          &#xC885;&#xB8CC;&#xB97C; &#xC704;&#xD574; &#xC0AC;&#xC6A9;&#xD558;&#xB294;
+          &#xACBD;&#xC6B0;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
