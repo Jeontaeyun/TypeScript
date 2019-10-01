@@ -14,6 +14,7 @@
   * [자바스크립트의 변수와 자료형](javascript/basic/value.md)
   * [자바스크립트의 변수 선언자](javascript/basic/undefined.md)
   * [자바스크립트의 문자열](javascript/basic/string.md)
+  * [자바스크립트의 정규 표현식](javascript/basic/undefined-1.md)
 * [자바스크립트의 객체](javascript/untitled/README.md)
   * [객체 \| Object](javascript/untitled/or-object.md)
   * [자바스크립트 객체 지향 프로그래밍](javascript/untitled/undefined-1/README.md)
