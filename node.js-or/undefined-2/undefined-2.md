@@ -68,5 +68,19 @@ Sync\(동기\) 메소드를 사용할 경우 요청이 수백 개 이상 들어�
 
 #### Buffer 클래스
 
-####   
+```javascript
+const buffer = Buffer.from("저를 버퍼로 바꿔보세요.");
+console.log("from()", buffer);
+console.log("length", buffer.length);
+console.log("toString()", buffer.toString());
+```
+
+ Buffer 객체는 여러 가지 메서드를 제공합니다. 
+
+| 구분  | 설명  |
+| :--- | :--- |
+| from\(문자열\) | 문자열을 버퍼로 바꿀 수 있습니다.  length 속성은 버퍼의 크기를 바이트 단위로 알려줍니다. |
+| toString\(버퍼\) | 버퍼를 다시 문자열로 바꿀 수 있습니다. 이때 base64나 hex를 인자로 넣으면 해당 인코딩으로도 변환할 수 있습니다.  |
+| concat\(배열\) | 배열 안에 든 버퍼들을 하나로 합칩니다. |
+| alloc\(바이트\) | 빈 버퍼를 생성합니다. 바이트를 인자로 지정해주면 해당 크기의 버퍼가 생성됩니다. |
 
