@@ -166,15 +166,75 @@ zlib의 createGzip\(\) 메서드는 스트림을 지원하여 readStream과 writ
 
 지금까지는 단순히 파일 읽기/쓰기를 했지만, 파일을 생성하고 삭제할 수도 있고, 폴더를 생성하고 삭제할 수도 있습니다. 
 
-| 구분  | 설명  |
-| :--- | :--- |
-| fs.access\(경로, 옵션, 콜백\) | 폴더나 파일에 접근할 수 있는지를 체크합니다.  |
-| fs.mkdir\(경로, 콜백\) |  |
-| fs.open\(경로, 옵션, 콜백\) |  |
-| fs.rename\(기존 경로, 새 경로, 콜백\) |  |
-| fs.readdir\(경로, 콜백\)  |  |
-| fs.unlink\(경로, 콜백\) |  |
-| fs.rmdir\(경로, 콜백\) |  |
-
-
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xAD6C;&#xBD84;</th>
+      <th style="text-align:left">&#xC124;&#xBA85;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">fs.access(&#xACBD;&#xB85C;, &#xC635;&#xC158;, &#xCF5C;&#xBC31;)</td>
+      <td
+      style="text-align:left">
+        <p>&#xD3F4;&#xB354;&#xB098; &#xD30C;&#xC77C;&#xC5D0; &#xC811;&#xADFC;&#xD560;
+          &#xC218; &#xC788;&#xB294;&#xC9C0;&#xB97C; &#xCCB4;&#xD06C;&#xD569;&#xB2C8;&#xB2E4;.
+          &#xB450;&#xBC88;&#xC9F8; &#xC778;&#xC790;&#xB85C; &#xC0C1;&#xC218;&#xB4E4;&#xC744;
+          &#xB123;&#xC74C;.</p>
+        <p>F_OK&#xB294; &#xD30C;&#xC77C; &#xC874;&#xC7AC; &#xC5EC;&#xBD80;, R_OK&#xB294;
+          &#xC77D;&#xAE30; &#xAD8C;&#xD55C; &#xC5EC;&#xBD80;, W_OK&#xB294; &#xC4F0;&#xAE30;
+          &#xAD8C;&#xD55C; &#xC5EC;&#xBD80; &#xCCB4;&#xD06C;</p>
+        </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.mkdir(&#xACBD;&#xB85C;, &#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">&#xD3F4;&#xB354;&#xB97C; &#xB9CC;&#xB4DC;&#xB294; &#xBA54;&#xC11C;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;.
+        &#xC774;&#xBBF8; &#xD3F4;&#xB354;&#xAC00; &#xC788;&#xB2E4;&#xBA74; &#xC5D0;&#xB7EC;&#xAC00;
+        &#xBC1C;&#xC0DD;&#xD558;&#xBBC0;&#xB85C; &#xBA3C;&#xC800; access() &#xBA54;&#xC11C;&#xB4DC;&#xB97C;
+        &#xD638;&#xCD9C;&#xD574;&#xC11C; &#xD655;&#xC778;&#xD558;&#xB294; &#xAC83;&#xC774;
+        &#xC911;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.open(&#xACBD;&#xB85C;, &#xC635;&#xC158;, &#xCF5C;&#xBC31;)</td>
+      <td
+      style="text-align:left">&#xD30C;&#xC77C;&#xC758; &#xC544;&#xC774;&#xB514;&#xB97C; &#xAC00;&#xC838;&#xC624;&#xB294;
+        &#xBA54;&#xC11C;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;. &#xD30C;&#xC77C;&#xC774;
+        &#xC5C6;&#xB2E4;&#xBA74; &#xD30C;&#xC77C;&#xC744; &#xC0DD;&#xC131;&#xD55C;
+        &#xB4A4; &#xADF8; &#xC544;&#xC774;&#xB514;&#xB97C; &#xAC00;&#xC838;&#xC635;&#xB2C8;&#xB2E4;.
+        &#xAC00;&#xC838;&#xC628; &#xC544;&#xC774;&#xB514;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;
+        fs.read()&#xB098; fs.write()&#xB85C; &#xC77D;&#xAC70;&#xB098; &#xC4F8;
+        &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.rename(&#xAE30;&#xC874; &#xACBD;&#xB85C;, &#xC0C8; &#xACBD;&#xB85C;,
+        &#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">&#xD30C;&#xC77C;&#xC758; &#xC774;&#xB984;&#xC744; &#xBC14;&#xAFB8;&#xB294;
+        &#xBA54;&#xC18C;&#xB4DC;&#xC785;&#xB2C8;&#xB2E4;. &#xAE30;&#xC874; &#xD30C;&#xC77C;
+        &#xC704;&#xCE58;&#xC640; &#xC0C8;&#xB85C;&#xC6B4; &#xD30C;&#xC77C; &#xC704;&#xCE58;&#xB97C;
+        &#xC801;&#xC5B4;&#xC8FC;&#xBA74;&#xB429;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.readdir(&#xACBD;&#xB85C;, &#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">&#xD3F4;&#xB354; &#xC548;&#xC758; &#xB0B4;&#xC6A9;&#xBB3C;&#xC744; &#xD655;&#xC778;&#xD560;
+        &#xC218; &#xC788;&#xC73C;&#xBA70; &#xBC30;&#xC5F4;&#xD615;&#xD0DC;&#xB85C;
+        &#xAC12;&#xC744; &#xBC18;&#xD658;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.unlink(&#xACBD;&#xB85C;, &#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">&#xD30C;&#xC77C;&#xC744; &#xC9C0;&#xC6B8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xD30C;&#xC77C;&#xC774; &#xC5C6;&#xB2E4;&#xBA74; &#xC5D0;&#xB7EC;&#xAC00;
+        &#xBC1C;&#xC0DD;&#xD574; &#xD30C;&#xC77C; &#xC5EC;&#xBD80;&#xB97C; &#xD655;&#xC778;&#xD558;&#xB294;
+        &#xAC83;&#xC774; &#xC911;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">fs.rmdir(&#xACBD;&#xB85C;, &#xCF5C;&#xBC31;)</td>
+      <td style="text-align:left">&#xD3F4;&#xB354;&#xB97C; &#xC9C0;&#xC6B8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+        &#xD3F4;&#xB354; &#xC548;&#xC5D0; &#xD30C;&#xC77C;&#xC774; &#xC788;&#xB2E4;&#xBA74;
+        &#xC5D0;&#xB7EC;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xBBC0;&#xB85C; &#xBA3C;&#xC800;
+        &#xB0B4;&#xBD80; &#xD30C;&#xC77C;&#xC744; &#xBAA8;&#xB450; &#xC9C0;&#xC6B0;&#xACE0;
+        &#xD638;&#xCD9C;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.</td>
+    </tr>
+  </tbody>
+</table>
 

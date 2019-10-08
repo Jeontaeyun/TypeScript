@@ -202,9 +202,18 @@ console.log("os.type() : ", os.type());
       <td style="text-align:left">path.join()&#xACFC; &#xBE44;&#xC2B7;&#xD55C; &#xACBD;&#xC6B0;.</td>
     </tr>
   </tbody>
-</table>### url 모듈 
+</table>### URL 모듈 
 
-url은 인터넷 주소를 쉽게 조작하도록 도와주는 모듈입니다.  
+URL은 인터넷 주소를 쉽게 조작하도록 도와주는 모듈입니다. URL처리에는 노드 버전 7에서 추가된 WHATWG 방식의 URL과 기존의 노드에서 사용하는 방식 두 가지가 있습니다. 
+
+![URL &#xCCB4;&#xACC4;](../../.gitbook/assets/kakaotalk_photo_2019-10-08-18-06-10.jpeg)
+
+#### 기존 방식 
+
+| 구분  | 설명  |
+| :--- | :--- |
+| **url.parse\(주소\)**  | 주소를 분해합니다. WHATWG 방식과 비교하면 username과 password 대신 auth속성이 있고, searchParams대신 query가 있습니다.  |
+| **url.format\(객체\)** | WHATWG 방식의 url과 기존 노드의 url 모두 사용할 수 있습니다. 분해되었던 url 객체를 다시 원래 상태로 조립합니다.  |
 
 ### querystring 모듈
 
