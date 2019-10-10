@@ -8,5 +8,33 @@
 
  이렇게 될 경우 **서버에 무리가 덜 가게되는 장점**을 가지지만 **세션을 공유하지 못한다는 단점** 등이 발생해 **Redis 등의 서버를 도입하여 해결**해야 합니다. 
 
+```javascript
+const cluster = require("cluster");
+const http = require("http");
+const numCPUs = require("os").cpus().length;
 
+if(cluster.isMaster){
+    console.log(`마스터 프로세스 아이디: ${process.pid}`);
+    
+    // CPU 개수만큼 워커 생산
+    for(let i = 0 ; i < numCPUs; i += 1){
+        cluster.fork();
+    }
+    
+    // 워커가 종료되면
+    cluster.on("exit", (worker, code, signal) => {
+        console.log(`${worker.process.pid}번 워커가 종료되었습니다.`);
+    });
+} else {
+    
+    // 워커들이 포트에서 대기
+    http.createServer((req,res)=>{
+        res.write("");
+        res.end("");
+    }).listen(8085);
+    
+    console.log(`${process.pid}번 워커 실행`);
+}
+
+```
 
