@@ -129,6 +129,7 @@
     * [connect-flash](node.js-or/server-framework/express-middleware/connect-flash.md)
     * [body-parser](node.js-or/server-framework/express-middleware/body-parser.md)
     * [cookie-parser](node.js-or/server-framework/express-middleware/cookie-parser.md)
+    * [express-session](node.js-or/server-framework/express-middleware/express-session.md)
     * [express-rate-limit](node.js-or/server-framework/express-middleware/express-rate-limit.md)
     * [Multer](node.js-or/server-framework/express-middleware/multer.md)
     * [Passport.js](node.js-or/server-framework/express-middleware/passport.js/README.md)
