@@ -72,6 +72,71 @@ let tuple : [string, number] = ["Stark", 27]
 // 배열에 더 많은 값을 할당하면 에러가 발생합니다. 
 ```
 
+### 
+
+### Enum 타입
+
+ JavaScript를 쓰면서 느끼는 아쉬운 점 중 하나인 **Enum\(Enumeration \| 엵거형\)**을 타입스크립트에서는 도입했다. **유한하면서도 여러 가지 상태를 가질 수 있는 변수를 선언**할 때 유용하다. 
+
+```typescript
+enum Color {
+    RED,
+    GREEN,
+    BLUE
+}
+```
+
+로 선언을 한 뒤 다음과 같이 사용할 수 있다.
+
+```typescript
+setColor(color : Color){
+    // feature
+}
+setColor(Color.RED);
+```
+
+ Enum은 하나의 타입이기도 하지만, JavaScript 런타임에서도 사용되는 하나의 변수로 볼 수도 있다. 
+
+ **JavaScript 런타임에서도 사용된다는 말은, 클래스처럼 컴파일 결과물이 존재한다는 것**이다. 예를 들어, 위에서 선언한 Color 타입은 아래와 같이 컴파일 된다. 
+
+```javascript
+var Color;
+(function (Color){
+    Color[Color["RED"] = 0] = "RED";
+    Color[Color["GREEN"] = 0] = "GREEN";
+    Color[Color["BLUE"] = 0] = "BLUE";
+})(Color || (Color = {} ));
+```
+
+ 결과적으로 위의 코드는 다음과 같이 된다. 
+
+```javascript
+var Color = {
+    RED: 0,
+    GREEN: 1,
+    BLUE : 2,
+    0: "RED",
+    1: "GREEN",
+    2: "BLUE"
+}
+```
+
+ **enum 키워드**는 기본적으로 **리버스 매핑\(Reverse Mapping\)을 지원**한다. 리버스 매핑이란 키로 값을 얻을 수 있을 뿐만 아니라, 값으로도 키를 얻을 수 있는 방식을 말한다. 
+
+ enum을 사용할 때 대개의 우 숫자 값은 의미가 없으므로, DB에 값을 삽입할 때를 위해서 의미가 있는 **문자열 값으로 초기화하고 싶은 경우가** 있다.
+
+ 그럴 경우 다음과 같이 사용하면 된다. 
+
+```typescript
+enum Color {
+    RED = 'red',
+    GREEN = 'green',
+    BLUE = 'blue'
+}
+```
+
+ enum은 기본적으로 **읽기 전용\(Read-only\)**이다. 
+
 ### void, null, undefined 특수 타입
 
 <table>
