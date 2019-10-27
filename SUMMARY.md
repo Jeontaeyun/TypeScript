@@ -110,6 +110,7 @@
   * [노드 내장 객체](node.js-or/undefined-2/undefined-1.md)
   * [노드 내장 모듈](node.js-or/undefined-2/undefined.md)
   * [노드 파일 시스템 처리](node.js-or/undefined-2/undefined-2.md)
+  * [노드 사용자 입력값 받기](node.js-or/undefined-2/undefined-5.md)
   * [노드 이벤트 처리](node.js-or/undefined-2/undefined-3.md)
   * [노드 예외 처리](node.js-or/undefined-2/undefined-4.md)
 * [노드 HTTP 웹 서버](node.js-or/node-server/README.md)
